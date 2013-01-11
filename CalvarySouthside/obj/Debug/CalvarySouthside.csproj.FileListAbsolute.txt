@@ -1,0 +1,5 @@
+D:\Media\My Documents\GitHub\CalvarySouthside.org\CalvarySouthside\bin\Debug\CalvarySouthside.dll
+D:\Media\My Documents\GitHub\CalvarySouthside.org\CalvarySouthside\bin\Debug\CalvarySouthside.pdb
+D:\Media\My Documents\GitHub\CalvarySouthside.org\CalvarySouthside\obj\Debug\ResolveAssemblyReference.cache
+D:\Media\My Documents\GitHub\CalvarySouthside.org\CalvarySouthside\obj\Debug\CalvarySouthside.dll
+D:\Media\My Documents\GitHub\CalvarySouthside.org\CalvarySouthside\obj\Debug\CalvarySouthside.pdb

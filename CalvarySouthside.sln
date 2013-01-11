@@ -1,9 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalvarySouthside.org", "CalvarySouthside.org\", "{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalvarySouthside.org", "CalvarySouthside.org", "{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{2FF13F53-E67C-435F-A2E2-24278DDD81D0}|CalvarySouthside.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/CalvarySouthside.org"
 		Debug.AspNetCompiler.PhysicalPath = "CalvarySouthside.org\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CalvarySouthside.org\"
@@ -19,9 +20,12 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalvarySouthside.org", "Cal
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "6160"
+		VWDDynamicPort = "true"
 		VWDVirtualPath = "/"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalvarySouthside", "CalvarySouthside\CalvarySouthside.csproj", "{2FF13F53-E67C-435F-A2E2-24278DDD81D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2FF13F53-E67C-435F-A2E2-24278DDD81D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF13F53-E67C-435F-A2E2-24278DDD81D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF13F53-E67C-435F-A2E2-24278DDD81D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF13F53-E67C-435F-A2E2-24278DDD81D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

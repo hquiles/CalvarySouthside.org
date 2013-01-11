@@ -58,6 +58,8 @@ body
 {
     background-color:#fbfbfa;
     border-top:4px solid #e98d4d;
+    color:#505153;
+    line-height:1.6em;
 }
 
 #container
@@ -141,7 +143,7 @@ header nav ul li a:hover
 
 #content h2 span
 {
-    background-color: #444;
+    background-color: #505153;
     color: white;
     padding: 0 0.25em;
     letter-spacing: -0.05em;
