@@ -20,7 +20,6 @@
             <h1><a href="/"><strong>Calvary Chapel Southside</strong></a></h1>
             <nav>
                 <ul class="group">
-                    <li><a href="/">Home</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/calendar">Calendar</a></li>
                     <li><a href="/missions">Missions</a></li>
