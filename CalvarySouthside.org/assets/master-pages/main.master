@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/assets/css/forms.css">
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shiv.js"></script>
+    <script src="/assets/js/libs/html5shiv.js"></script>
     <![endif]-->
 
     <asp:ContentPlaceHolder ID="head" runat="server" />
@@ -50,5 +50,8 @@
         </footer>
     </div>
     </form>
+
+    <script src="/assets/js/libs/jquery-1.8.3.min.js"></script>
+    <script src="/assets/js/ToggleSwitch.js"></script>
 </body>
 </html>

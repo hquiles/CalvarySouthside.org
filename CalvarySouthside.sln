@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalvarySouthside.org", "CalvarySouthside.org", "{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalvarySouthside.org", "CalvarySouthside.org\", "{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		ProjectReferences = "{2FF13F53-E67C-435F-A2E2-24278DDD81D0}|CalvarySouthside.dll;"
+		ProjectReferences = "{2FF13F53-E67C-435F-A2E2-24278DDD81D0}|CalvarySouthside.dll;{5842EE19-55CA-4808-8113-EA5FB20E5C1F}|Infrastructure.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/CalvarySouthside.org"
 		Debug.AspNetCompiler.PhysicalPath = "CalvarySouthside.org\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CalvarySouthside.org\"
@@ -27,7 +27,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalvarySouthside.org", "Cal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalvarySouthside", "CalvarySouthside\CalvarySouthside.csproj", "{2FF13F53-E67C-435F-A2E2-24278DDD81D0}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Admin", "Admin", "{B0E8EB16-698F-4B23-81BC-0F2535274C86}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Admin", "Admin\", "{B0E8EB16-698F-4B23-81BC-0F2535274C86}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/Admin"
@@ -48,6 +48,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Admin", "Admin", "{B0E8EB16
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{5842EE19-55CA-4808-8113-EA5FB20E5C1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +68,10 @@ Global
 		{B0E8EB16-698F-4B23-81BC-0F2535274C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0E8EB16-698F-4B23-81BC-0F2535274C86}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{B0E8EB16-698F-4B23-81BC-0F2535274C86}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{5842EE19-55CA-4808-8113-EA5FB20E5C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5842EE19-55CA-4808-8113-EA5FB20E5C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5842EE19-55CA-4808-8113-EA5FB20E5C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5842EE19-55CA-4808-8113-EA5FB20E5C1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

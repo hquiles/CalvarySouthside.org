@@ -16,6 +16,11 @@ input[type=text],
 input[type=password],
 textarea
 {
+    /* http://paulirish.com/2012/box-sizing-border-box-ftw */
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    
     border:1px solid #d8d8d8;
     border-top-color:#c5c5c5;
     border-bottom-color:#e8e8e8;
@@ -108,3 +113,43 @@ input[type=submit]
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4c694', endColorstr='#e88c4d',GradientType=0 );
     
 }
+
+
+
+
+/* Toggle Switch
+=========================================================================================================== */
+
+.ToggleSwitch {
+    width:35px;
+    height:15px;
+    padding:2px;
+    margin:0;
+    background-image:url("/assets/images/ui/ToggleSwitch.png");
+    font-size:0;
+    line-height:0;
+    float:left;
+    margin-right:10px;
+    }
+
+.ToggleSwitch>div
+{
+    width:35px;
+    height:15px;
+    position:relative;
+    overflow:hidden;
+}
+    
+.ToggleSwitch a, .ToggleSwitch a.ToggleSwitchOn {
+    position:absolute;
+    display:block;
+    width:60px;
+    height:15px;
+    margin:0;
+    background-image:url("/assets/images/ui/ToggleSwitch.png");
+    background-position:0 -19px;
+    outline:0 !important;
+    }
+    .ToggleSwitch a.ToggleSwitchOff {
+        /* background-position:-25px -19px; */
+        }

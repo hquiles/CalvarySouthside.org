@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/assets/master-pages/main.master" AutoEventWireup="true" CodeFile="default.aspx.cs" Inherits="prayer_requests_default" %>
 
+<%@ Register Src="~/assets/user-controls/ToggleSwitch.ascx" TagName="ToggleSwitch" TagPrefix="bh" %>
+
 <%-- 
     TODO:
 
@@ -64,6 +66,7 @@
             </td>
             <td>
                 <asp:CheckBox runat="server" ID="chkAnonymous" />
+                <bh:ToggleSwitch runat="server" ID="tsAnonymous" />
             </td>
         </tr>
         <tr>

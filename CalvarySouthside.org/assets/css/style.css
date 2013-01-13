@@ -4,9 +4,6 @@
 /* http://stackoverflow.com/questions/273964/how-to-change-background-color-on-text-links-on-hover-but-not-image-links */
 a img{ vertical-align:text-bottom; }
 
-/* http://paulirish.com/2012/box-sizing-border-box-ftw */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
 .group:after {
 	visibility: hidden;
 	display: block;
@@ -91,7 +88,7 @@ textarea
 {
     background-color:#fff;
     border:1px solid #ebeaea;
-    width:980px;
+    width:900px;
     margin:1em auto;
     padding:40px;
 }
