@@ -14,21 +14,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h2><span>Prayer Requests</span></h2>
 
-    <table>
+    <table class="align-top">
         <tr>
-            <td>
+            <td style="width:20%;">
                 <asp:Label Text="Prayer Request" runat="server" AssociatedControlID="txtFirstName" />
             </td>
-            <td>
+            <td style="width:80%;">
                 <asp:RadioButtonList runat="server" ID="chklstPrayerOrPraise">
-                    <asp:ListItem Text="Prayer Request" Value="0"></asp:ListItem>
+                    <asp:ListItem Text="Prayer Request" Value="0" Selected="True"></asp:ListItem>
                     <asp:ListItem Text="Praise Report" Value="1"></asp:ListItem>
                 </asp:RadioButtonList>
             </td>
         </tr>
         <tr>
             <td>
-                <asp:Label Text="FirstName" runat="server" AssociatedControlID="txtFirstName" />
+                <asp:Label Text="First Name" runat="server" AssociatedControlID="txtFirstName" />
             </td>
             <td>
                 <asp:TextBox runat="server" ID="txtFirstName" />
@@ -55,7 +55,7 @@
                 <asp:Label Text="Message" runat="server" AssociatedControlID="txtMessage" />
             </td>
             <td>
-                <asp:TextBox runat="server" ID="txtMessage" />
+                <asp:TextBox runat="server" ID="txtMessage" TextMode="MultiLine" />
             </td>
         </tr>
         <tr>
@@ -64,6 +64,13 @@
             </td>
             <td>
                 <asp:CheckBox runat="server" ID="chkAnonymous" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <asp:Button runat="server" OnClick="SubmitForm" Text="Submit" />
             </td>
         </tr>
     </table>

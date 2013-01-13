@@ -1,5 +1,12 @@
 /*
 ====================================================================================================== */
+
+/* http://stackoverflow.com/questions/273964/how-to-change-background-color-on-text-links-on-hover-but-not-image-links */
+a img{ vertical-align:text-bottom; }
+
+/* http://paulirish.com/2012/box-sizing-border-box-ftw */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
 .group:after {
 	visibility: hidden;
 	display: block;
@@ -62,11 +69,29 @@ body
     line-height:1.6em;
 }
 
+table
+{
+    width:100%;
+}
+
+table.align-top td
+{
+    vertical-align:top;
+}
+
+textarea
+{
+    width:100%;
+}
+
+/*
+====================================================================================================== */
+
 #container
 {
     background-color:#fff;
     border:1px solid #ebeaea;
-    width:900px;
+    width:980px;
     margin:1em auto;
     padding:40px;
 }

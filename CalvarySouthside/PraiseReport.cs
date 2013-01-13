@@ -8,24 +8,17 @@ using Infrastructure;
 
 namespace CalvarySouthside
 {
-    public class PrayerRequest
+    public class PraiseReport : PrayerRequest
     {
         #region Properties
-
-        public bool Anonymous { get; set; }
-        public int PersonId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string EmailAddress { get; set; }
-        public string Message { get; set; }
 
         #endregion
 
         #region Methods
 
-        public virtual void Submit()
+        public override void Submit()
         {
-            Database.ExecuteStoredProcedure("sp_PrayerRequest_Insert",
+            Database.ExecuteStoredProcedure("sp_PraiseReport_Insert",
                 new SqlParameter("@Anonymous", Anonymous),
                 new SqlParameter("@PersonId", PersonId),
                 new SqlParameter("@LastName", LastName),
