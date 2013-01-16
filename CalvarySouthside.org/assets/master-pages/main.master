@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width" />
     <title></title>
     
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/forms.css">
 
     <!--[if lt IE 9]>
     <script src="/assets/js/libs/html5shiv.js"></script>
@@ -25,7 +23,7 @@
             <nav>
                 <ul class="group">
                     <li><a href="/about">About</a></li>
-                    <li><a href="/calendar">Calendar</a></li>
+                    <!--li><a href="/calendar">Calendar</a></li-->
                     <li><a href="/missions">Missions</a></li>
                     <li><a href="/youth-ministry">Youth</a></li>
                     <li><a href="/bible-study">Bible Study</a></li>
@@ -52,6 +50,7 @@
     </form>
 
     <script src="/assets/js/libs/jquery-1.8.3.min.js"></script>
+    <script src="/assets/js/libs/bootstrap.min.js"></script>
     <script src="/assets/js/ToggleSwitch.js"></script>
 </body>
 </html>

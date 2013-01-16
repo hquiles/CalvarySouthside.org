@@ -8,8 +8,8 @@
 
 <div class="ToggleSwitch">
     <div>
-        <a class="ToggleSwitchOn" href="#">
+        <asp:HyperLink NavigateUrl="#" ID="hlnkToggleSwitch" runat="server">
             <asp:HiddenField runat="server" ID="hdnToggleSwitch" />
-        </a>
+        </asp:HyperLink>
     </div>
 </div>

@@ -1,8 +1,33 @@
-/*
+/* Bootstrap overrides
 ====================================================================================================== */
 
-/* http://stackoverflow.com/questions/273964/how-to-change-background-color-on-text-links-on-hover-but-not-image-links */
-a img{ vertical-align:text-bottom; }
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="date"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="url"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="color"]:focus, 
+.uneditable-input:focus {
+    border-color: rgba(233, 141, 77, 0.8);
+    outline: 0;
+    outline: thin dotted 9;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 1px 2px rgba(233, 141, 77, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px rgba(233, 141, 77, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px rgba(233, 141, 77, 0.6);
+}
+
+
+/* Layout Patterns
+====================================================================================================== */
 
 .group:after {
 	visibility: hidden;
@@ -43,7 +68,8 @@ a img{ vertical-align:text-bottom; }
 
 .text-right { text-align:right; }
 
-/*
+
+/* Common HTML Elements
 ====================================================================================================== */
 
 a, a:visited
@@ -57,6 +83,9 @@ a:hover
     color:#6da723;
     text-decoration:none;
 }
+
+/* http://stackoverflow.com/questions/273964/how-to-change-background-color-on-text-links-on-hover-but-not-image-links */
+a img{ vertical-align:text-bottom; }
 
 body
 {
@@ -76,12 +105,26 @@ table.align-top td
     vertical-align:top;
 }
 
+input[type=text],
+input[type=password],
+textarea 
+{
+    /* http://paulirish.com/2012/box-sizing-border-box-ftw */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    /* adjusted from 20 to 30 to match the rest of bootstrap's elements */
+    height:30px;
+}
+
 textarea
 {
     width:100%;
+    height:auto;
 }
 
-/*
+/* Site Structure
 ====================================================================================================== */
 
 #container
@@ -113,7 +156,7 @@ header h1 a
     display:block;
     width:100%;
     height:100%;
-    background-image:url(../images/logo.png);
+    background-image:url(../img/logo.png);
 }
 
 header h1 a strong
@@ -156,19 +199,21 @@ header nav ul li a:hover
 }
 
 
-/* content
+/* Content
 ===================================================*/
 #content h2
 {
     margin-top: 0;
+    margin-bottom:40px;
+    font-size:2em;
 }
 
 #content h2 span
 {
     background-color: #505153;
     color: white;
-    padding: 0 0.25em;
-    letter-spacing: -0.05em;
+    padding: 0.075em 0.25em;
+    letter-spacing: -0.1em;
     font-weight: bold;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -176,7 +221,7 @@ header nav ul li a:hover
 }
 
 
-/* footer
+/* Footer
 ===================================================*/
 footer
 {
@@ -205,3 +250,40 @@ footer p
 {
     margin-top:0;
 }
+
+
+/* Toggle Switch
+=========================================================================================================== */
+
+.ToggleSwitch {
+    width:35px;
+    height:15px;
+    padding:2px;
+    background-image:url("/assets/img/ui/ToggleSwitch.png");
+    font-size:0;
+    line-height:0;
+    float:left;
+    margin:4px 10px 10px 0;
+    }
+
+.ToggleSwitch>div
+{
+    width:35px;
+    height:15px;
+    position:relative;
+    overflow:hidden;
+}
+    
+.ToggleSwitch a, .ToggleSwitch a.ToggleSwitchOn {
+    position:absolute;
+    display:block;
+    width:60px;
+    height:15px;
+    margin:0;
+    background-image:url("/assets/img/ui/ToggleSwitch.png");
+    background-position:0 -19px;
+    outline:0 !important;
+    }
+    .ToggleSwitch a.ToggleSwitchOff {
+        /* background-position:-25px -19px; */
+        }
