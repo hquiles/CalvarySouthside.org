@@ -41,9 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PraiseReport.cs" />
+    <Compile Include="BibleStudy.cs" />
+    <Compile Include="Forms\Message.cs" />
     <Compile Include="Person.cs" />
-    <Compile Include="PrayerRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
