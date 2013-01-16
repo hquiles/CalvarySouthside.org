@@ -19,13 +19,13 @@
     <table class="align-top">
         <tr>
             <td style="width:20%;">
-                <asp:Label Text="Prayer Request" runat="server" AssociatedControlID="txtFirstName" />
+                <asp:Label Text="Prayer Request" runat="server" AssociatedControlID="ddlPrayerOrPraise" />
             </td>
             <td style="width:80%;">
-                <asp:RadioButtonList runat="server" ID="chklstPrayerOrPraise">
-                    <asp:ListItem Text="Prayer Request" Value="0" Selected="True"></asp:ListItem>
-                    <asp:ListItem Text="Praise Report" Value="1"></asp:ListItem>
-                </asp:RadioButtonList>
+                <asp:DropDownList runat="server" ID="ddlPrayerOrPraise">
+                    <asp:ListItem Text="Prayer Request" Value="prayer" Selected="True" />
+                    <asp:ListItem Text="Praise Report" Value="praise" />
+                </asp:DropDownList>
             </td>
         </tr>
         <tr>
@@ -62,10 +62,9 @@
         </tr>
         <tr>
             <td>
-                <asp:Label Text="Remain Anonymous" runat="server" AssociatedControlID="chkAnonymous" />
+                <asp:Label Text="Remain Anonymous" runat="server" />
             </td>
             <td>
-                <asp:CheckBox runat="server" ID="chkAnonymous" />
                 <bh:ToggleSwitch runat="server" ID="tsAnonymous" />
             </td>
         </tr>
@@ -73,7 +72,7 @@
             <td>
             </td>
             <td>
-                <asp:Button runat="server" OnClick="SubmitForm" Text="Submit" />
+                <asp:Button runat="server" OnClick="SubmitForm" Text="Submit" CssClass="btn" />
             </td>
         </tr>
     </table>

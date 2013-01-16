@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using CalvarySouthside;
+using CalvarySouthside.Forms;
 
 using System.Data;
 using System.Data.SqlClient;
@@ -13,26 +13,21 @@ public partial class prayer_requests_default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        
     }
 
     protected void SubmitForm(object sender, EventArgs e)
     {
-        PrayerRequest pr = null;
+        Message message = new Message();
 
-        if (chklstPrayerOrPraise.SelectedValue == "0")
-            pr = new PrayerRequest();
-        else
-            pr = new PraiseReport();
+        message.MessageType = ddlPrayerOrPraise.SelectedValue == "praise" ? MessageType.PraiseReport : MessageType.PrayerRequest;
+        message.Anonymous = tsAnonymous.Checked;
+        message.LastName = txtLastName.Text;
+        message.FirstName = txtFirstName.Text;
+        message.EmailAddress = txtEmailAddress.Text;
+        message.MessageBody = txtMessage.Text;
 
-        pr.Anonymous = chkAnonymous.Checked;
-        pr.PersonId = 0; // 0 for now, until user accounts exists
-        pr.LastName = HttpUtility.HtmlEncode(txtLastName.Text);
-        pr.FirstName = HttpUtility.HtmlEncode(txtFirstName.Text);
-        pr.EmailAddress = HttpUtility.HtmlEncode(txtEmailAddress.Text);
-        pr.Message = HttpUtility.HtmlEncode(txtMessage.Text);
-
-        pr.Submit();
+        message.Submit();
     }
 
 }
