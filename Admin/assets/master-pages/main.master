@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="assets_Main" %>
+
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/libs/html5shiv.js"></script>
+    <![endif]-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    </form>
+
+    <script src="/assets/js/libs/jquery-1.8.3.min.js"></script>
+    <script src="/assets/js/libs/bootstrap.min.js"></script>
+</body>
+</html>
