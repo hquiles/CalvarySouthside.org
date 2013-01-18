@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="/assets/js/libs/html5shiv.js"></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <asp:ContentPlaceHolder ID="head" runat="server" />
@@ -49,8 +50,17 @@
     </div>
     </form>
 
-    <script src="/assets/js/libs/jquery-1.8.3.min.js"></script>
+    <script src="/assets/js/libs/jquery-1.9.0.min.js"></script>
     <script src="/assets/js/libs/bootstrap.min.js"></script>
     <script src="/assets/js/ToggleSwitch.js"></script>
+
+    <asp:Panel ID="pnlGoogleAnalytics" runat="server" Visible="false">
+    <script>
+        var _gaq=[['_setAccount','UA-37712854-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    </asp:Panel>
 </body>
 </html>
