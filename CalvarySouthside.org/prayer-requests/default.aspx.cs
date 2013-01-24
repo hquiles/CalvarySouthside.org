@@ -18,6 +18,7 @@ public partial class prayer_requests_default : System.Web.UI.Page
 
     protected void SubmitForm(object sender, EventArgs e)
     {
+        // submit message
         Message message = new Message();
 
         message.MessageType = ddlPrayerOrPraise.SelectedValue == "praise" ? MessageType.PraiseReport : MessageType.PrayerRequest;
@@ -28,6 +29,12 @@ public partial class prayer_requests_default : System.Web.UI.Page
         message.MessageBody = txtMessage.Text;
 
         message.Submit();
+
+        // show confirmation
+        tblSubmissionForm.Visible = false;
+        pnlConfirmationMessage.Visible = true;
+
+        // send email confirmation, including link
     }
 
 }

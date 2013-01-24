@@ -16,7 +16,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h2><span>Prayer Requests</span></h2>
 
-    <table class="align-top">
+    <asp:Panel runat="server" ID="pnlConfirmationMessage" CssClass="alert alert-success" Visible="false">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4>Thank You</h4>
+        Thank you for your submission.
+    </asp:Panel>
+
+    <table id="tblSubmissionForm" runat="server" class="align-top">
         <tr>
             <td style="width:20%;">
                 <asp:Label Text="Prayer Request" runat="server" AssociatedControlID="ddlPrayerOrPraise" />
