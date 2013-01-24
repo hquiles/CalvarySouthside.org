@@ -1,5 +1,0 @@
-D:\Media\My Documents\GitHub\CalvarySouthside.org\Infrastructure\bin\Debug\Infrastructure.dll
-D:\Media\My Documents\GitHub\CalvarySouthside.org\Infrastructure\bin\Debug\Infrastructure.pdb
-D:\Media\My Documents\GitHub\CalvarySouthside.org\Infrastructure\obj\Debug\ResolveAssemblyReference.cache
-D:\Media\My Documents\GitHub\CalvarySouthside.org\Infrastructure\obj\Debug\Infrastructure.dll
-D:\Media\My Documents\GitHub\CalvarySouthside.org\Infrastructure\obj\Debug\Infrastructure.pdb
