@@ -20,6 +20,7 @@ namespace CalvarySouthside.Forms
         #region Properties
 
         public int Id { get; set; }
+        public Guid Key { get; set; }
         public MessageType MessageType { get; set; }
         public bool Anonymous { get; set; }
         public string FirstName { get; set; }
@@ -30,15 +31,61 @@ namespace CalvarySouthside.Forms
 
         #endregion
 
-        #region Constructor
+        #region Constructors
 
         public Message()
         {
             
         }
 
+        /// <summary>
+        /// Load by Id
+        /// </summary>
+        /// <param name="id"></param>
+        public Message(int id)
+        {
+            DataSet ds = Database.ExecuteStoredProcedure("sp_Message_GetById"
+                , new SqlParameter("@Id", id)
+                );
+
+            if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                FillFromDataRow(ds.Tables[0].Rows[0]);
+        }
+
+        /// <summary>
+        /// Load by Key
+        /// </summary>
+        /// <param name="key"></param>
+        public Message(Guid key)
+        {
+            DataSet ds = Database.ExecuteStoredProcedure("sp_Message_GetByKey"
+                , new SqlParameter("@Key", key)
+                );
+
+            if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                FillFromDataRow(ds.Tables[0].Rows[0]);
+        }
+
+        /// <summary>
+        /// Instantiate with data
+        /// </summary>
+        /// <param name="dr"></param>
         public Message(DataRow dr)
         {
+            FillFromDataRow(dr);
+        }
+
+        #endregion
+
+        #region Methods
+
+        private void FillFromDataRow(DataRow dr)
+        {
+            Guid tempKey;
+            if (!Guid.TryParse(dr["Key"].ToString(), out tempKey))
+                tempKey = Guid.Empty;
+            Key = tempKey;
+
             Id = Convert.ToInt32(dr["Id"]);
             MessageType = (MessageType)Convert.ToInt32(dr["MessageType"]);
             Anonymous = Convert.ToBoolean(dr["Anonymous"]);
@@ -51,13 +98,12 @@ namespace CalvarySouthside.Forms
             Date = dto.LocalDateTime;
         }
 
-        #endregion
-
-        #region Methods
-
         public virtual void Submit()
         {
+            Key = Guid.NewGuid();
+
             Database.ExecuteStoredProcedure("sp_Message_Insert"
+                , new SqlParameter("@Key", Key)
                 , new SqlParameter("@MessageType", MessageType)
                 , new SqlParameter("@Anonymous", Anonymous)
                 , new SqlParameter("@LastName", LastName)
