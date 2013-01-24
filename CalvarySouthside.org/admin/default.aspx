@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" 
-    AutoEventWireup="true" CodeFile="default.aspx.cs" Inherits="admin_default" %>
+    AutoEventWireup="true" CodeFile="default.aspx.cs" Inherits="Admin.Default" %>
 
 <!DOCTYPE html>
 
@@ -56,13 +56,16 @@
 
     <div class="container">
         <div class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
+            <h2 class="form-signin-heading">Please sign in</h2>
 
-        <input type="text" class="input-block-level" placeholder="Email address">
-        <input type="password" class="input-block-level" placeholder="Password">
+            <div id="divError" runat="server" visible="false" class="alert alert-error">
+                Incorrect login.
+            </div>
 
-        <button class="btn btn-large btn-primary" type="submit">
-            Sign in</button>
+            <asp:TextBox runat="server" ID="txtEmailAddress" ClientIDMode="Static" CssClass="input-block-level" placeholder="Email Address" />
+            <asp:TextBox runat="server" ID="txtPassword" CssClass="input-block-level" TextMode="Password" placeholder="Password" />
+
+            <asp:Button runat="server" CssClass="btn btn-large btn-primary" OnClick="SignIn" Text="Sign In" />
         </div>
     </div>
     <!-- /container -->
@@ -71,5 +74,10 @@
 
     <script src="/assets/js/libs/jquery-1.9.0.min.js"></script>
     <script src="/assets/js/libs/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#txtEmailAddress').focus();
+        });
+    </script>
 </body>
 </html>
