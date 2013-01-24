@@ -17,7 +17,7 @@
         pray and get to know one another.
     </p>
 
-    <asp:ListView runat="server" ID="lvBibleStudy" ItemPlaceholderID="lvBibleStudyPlaceHolder">
+    <asp:ListView runat="server" ID="lvBibleStudy" ItemPlaceholderID="lvBibleStudyPlaceHolder" Visible="false">
         <LayoutTemplate>
             <ul>
                 <asp:PlaceHolder runat="server" ID="lvBibleStudyPlaceHolder" />
