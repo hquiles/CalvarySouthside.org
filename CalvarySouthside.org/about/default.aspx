@@ -28,7 +28,6 @@
                 <li>Jim McFall</li>
                 <li>Larry Kaser</li>
                 <li>Ben Schantz</li>
-                <li>Tim Wolter</li>
             </ul>
         </div>
     </div>
