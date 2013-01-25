@@ -26,3 +26,4 @@ Technology
 - Javascript and jQuery
 - HTML5, CSS3
 - Twitter Bootstrap
+- BCrypt for password hashing
