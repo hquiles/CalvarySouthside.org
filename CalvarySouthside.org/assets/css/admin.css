@@ -1,0 +1,37 @@
+﻿/* General Styles
+================================================================================================= */
+.table th
+{
+    background-color:#444;
+    color:#fff;
+}
+
+
+/* Inbox 
+================================================================================================= */
+
+a.toggle-message
+{
+    margin-right:10px;
+}
+
+a.toggle-message:hover
+{
+    text-decoration:none;
+}
+
+tr.inbox-message
+{
+    display:none;    
+}
+
+tr.inbox-message>td
+{
+    padding:0 !important;
+}
+
+tr.inbox-message>td>div
+{
+    border-left:30px solid #e5e5e5;
+    padding:8px;
+}
