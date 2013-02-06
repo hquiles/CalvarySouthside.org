@@ -49,9 +49,36 @@ namespace CalvarySouthside
             LoadPerson();
         }
 
+        public Person(DataRow dr)
+        {
+            PopulateFromDataRow(dr);
+        }
+
         #endregion
 
         #region Methods
+
+        private void PopulateFromDataRow(DataRow dr)
+        {
+            Id = Convert.ToInt32(dr["Id"]);
+            DateRegistered = Convert.ToDateTime(dr["DateRegistered"]);
+            LastName = dr["LastName"].ToString();
+            FirstName = dr["FirstName"].ToString();
+            EmailAddress = dr["EmailAddress"].ToString();
+            ConfirmedEmail = Convert.ToBoolean(dr["ConfirmedEmail"]);
+            EmailList = Convert.ToBoolean(dr["EmailList"]);
+            PhoneNumber = dr["PhoneNumber"].ToString();
+
+            Address1 = dr["Address1"].ToString();
+            Address2 = dr["Address2"].ToString();
+            City = dr["City"].ToString();
+            State = dr["State"].ToString();
+            Zip = dr["Zip"].ToString();
+
+            Admin = Convert.ToBoolean(dr["Admin"]);
+            //,[Birthday]
+            //,[PasswordHash]
+        }
 
         private void LoadPerson()
         {
@@ -62,24 +89,7 @@ namespace CalvarySouthside
             if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
             {
                 DataRow dr = ds.Tables[0].Rows[0];
-
-                DateRegistered = Convert.ToDateTime(dr["DateRegistered"]);
-                LastName = dr["LastName"].ToString();
-                FirstName = dr["FirstName"].ToString();
-                EmailAddress = dr["EmailAddress"].ToString();
-                ConfirmedEmail = Convert.ToBoolean(dr["ConfirmedEmail"]);
-                EmailList = Convert.ToBoolean(dr["EmailList"]);
-                PhoneNumber = dr["PhoneNumber"].ToString();
-
-                Address1 = dr["Address1"].ToString();
-                Address2 = dr["Address2"].ToString();
-                City = dr["City"].ToString();
-                State = dr["State"].ToString();
-                Zip = dr["Zip"].ToString();
-
-                Admin = Convert.ToBoolean(dr["Admin"]);
-                //,[Birthday]
-                //,[PasswordHash]
+                PopulateFromDataRow(dr);
             }
         }
 
@@ -107,6 +117,21 @@ namespace CalvarySouthside
 
             if (!string.IsNullOrEmpty(NewPassword))
                 Authentication.SetPassword(EmailAddress, NewPassword);
+        }
+
+        public static List<Person> GetAll()
+        {
+            List<Person> people = new List<Person>();
+
+            DataSet ds = Database.ExecuteStoredProcedure("sp_Person_GetAll");
+
+            if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                    people.Add(new Person(dr));
+            }
+
+            return people;
         }
 
         #endregion
