@@ -88,8 +88,8 @@
         <div class="control-group">
             <asp:Label Text="Password" AssociatedControlID="txtPassword" runat="server" CssClass="control-label" />
             <div class="controls">
-                <asp:TextBox runat="server" ID="txtPassword" placeholder="Password" /><br />
-                <asp:TextBox runat="server" ID="txtPasswordConfirm" placeholder="Confirm" style="margin-top:0.5em;" />
+                <asp:TextBox runat="server" ID="txtPassword" placeholder="Password" TextMode="Password" /><br />
+                <asp:TextBox runat="server" ID="txtPasswordConfirm" placeholder="Confirm" TextMode="Password" style="margin-top:0.5em;" />
             </div>
         </div>
     </div>

@@ -38,7 +38,7 @@ namespace Admin
             txtState.Text = person.State;
             txtZip.Text = person.Zip;
 
-            //chkAdmin.Checked = person.admin;
+            chkAdmin.Checked = person.Admin;
         }
 
         protected void SaveUser(object sender, EventArgs e)
