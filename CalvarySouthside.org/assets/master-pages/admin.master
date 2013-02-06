@@ -19,6 +19,8 @@
 <body>
     <form id="form1" runat="server">
     <div class="container">
+        <h4>Calvary Chapel Southside</h4>
+
         <div class="navbar navbar-inverse">
             <div class="navbar-inner">
                 <div class="container">
@@ -26,20 +28,19 @@
                         class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </a>
 
-                    <a class="brand" href="/admin">CalvarySouthside.org</a>
+                    <!--<a class="brand" href="/admin">CalvarySouthside.org</a>-->
 
                     <div class="nav-collapse collapse">
                         <p class="navbar-text pull-right">
                             Logged in as <asp:HyperLink runat="server" ID="hlnkUsername" CssClass="navbar-link" />
                             <a href="/admin">Sign Out</a>
                         </p>
-                        <!--
+                        
                         <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a runat="server" href="~/admin/inbox.aspx">Inbox</a></li>
+                            <li><a runat="server" href="~/admin/people.aspx">People</a></li>
                         </ul>
-                        -->
+                        
                     </div>
                     <!--/.nav-collapse -->
                 </div>
@@ -51,6 +52,7 @@
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/bootstrap.min.js"></script>
+    <script src="/assets/js/calvary-admin.js"></script>
 
     <asp:ContentPlaceHolder ID="cphFooter" runat="server" />
 </body>
