@@ -1,9 +1,13 @@
 ﻿/* General Styles
 ================================================================================================= */
-.table th
+.table th,
+.table tr.header td
 {
     background-color:#444;
-    color:#fff;
+    color:#aaa;
+    font-weight:normal;
+    font-size:0.8em;
+    text-transform:uppercase;
 }
 
 
