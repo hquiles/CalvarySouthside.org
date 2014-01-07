@@ -80,7 +80,6 @@ a:hover {
     text-shadow: none;
     padding: 15px 20px;
     text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 .btn-main:hover {
@@ -101,7 +100,7 @@ a:hover {
 
 
 [class^="fa-"], [class*=" fa-"] {
- vertical-align: middle;
+ vertical-align: baseline;
 }
 
 ::selection {
@@ -111,27 +110,6 @@ a:hover {
 ::-moz-selection {
 	background: #ff755a; /* Firefox */
 	color: #FFFFFF;
-}
-
-.scrollToTop, a.scrollToTop {
-	width:35px;
-	height:30px;
-	border-radius: 4px;
-	text-align:center;
-	background: rgba(40,40,40,0.85);
-	font-weight: bold;
-	font-size: 19px;
-	color: #FFFFFF;
-	text-decoration: none;
-	position:fixed;
-	bottom:20px;
-	right:20px;
-	display:none;
-	z-index: 2000;
-}
-.scrollToTop:hover{
-	text-decoration:none;
-	color: #ececec;
 }
 
 /*-----------Margins-----------------*/
@@ -228,7 +206,7 @@ a:hover {
 }
 
 .navbar-brand {
-  margin-top: 15px;
+  margin-top: 4px;
 }
 
 .navbar .nav > li > a {
@@ -352,12 +330,13 @@ a:hover {
     border-radius: 0px;
     font-size: 22px;
     font-weight: bold;
-    height: 40px;
     width: 5%;
     margin-top: 300px;
     text-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
     z-index: 10;
     opacity: 1;
+    bottom:auto;
+    padding:0.75em 0;
 }
 
 .carousel-control.left {
@@ -381,17 +360,17 @@ a:hover {
 }
 
 .one {
-  background: url(../img/header1.jpg) no-repeat center center;
+  background: url(../img/samples/header1.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .two {
-  background: url(../img/header2.jpg) no-repeat center center;
+  background: url(../img/samples/header2.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .three {
-  background: url(../img/header3.jpg) no-repeat center center;
+  background: url(../img/samples/header3.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -409,7 +388,7 @@ a:hover {
    Content Styles
    ========================================================================== */
 .section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 #content1 {
@@ -418,7 +397,7 @@ a:hover {
 }
 
 #content2 {
-  background: url(../img/grid_noise.png) repeat;
+  background: url(../img/samples/grid_noise.png) repeat;
   background-color: #ebebeb;
 }
 
@@ -603,17 +582,14 @@ a:hover {
 .bar-one       { width:100%;  -moz-animation:bar-one 1.0s ease-out;       -webkit-animation:bar-one 1.0s ease-out;        }
 .bar-two        { width:100%;  -moz-animation:bar-two 1.7s ease-out;        -webkit-animation:bar-two 1.7s ease-out;         }
 .bar-three      { width:100%; -moz-animation:bar-three 2.3s ease-out;   -webkit-animation:bar-three 2.3s ease-out;      }
-.bar-four      { width:100%; -moz-animation:bar-three 2.7s ease-out;   -webkit-animation:bar-three 2.7s ease-out;      }
 
 @-moz-keyframes bar-one       { 0%  { width:0px;} 100%{ width:100%;}   }
 @-moz-keyframes bar-two        { 0%  { width:0px;} 100%{ width:100%;}  }
 @-moz-keyframes bar-three      { 0%  { width:0px;} 100%{ width:100%;}  }
-@-moz-keyframes bar-four      { 0%  { width:0px;} 100%{ width:100%;}  }
 
 @-webkit-keyframes bar-one       { 0%  { width:0px;} 100%{ width:100%;}   }
 @-webkit-keyframes bar-two        { 0%  { width:0px;} 100%{ width:100%;}  }
 @-webkit-keyframes bar-three      { 0%  { width:0px;} 100%{ width:100%;}  }
-@-webkit-keyframes bar-four      { 0%  { width:0px;} 100%{ width:100%;}  }
 
 
 
@@ -652,11 +628,12 @@ a:hover {
   padding-bottom: 10px;
 }
 
+
 /* ==========================================================================
    Team Member Styles
    ========================================================================== */
 .team-container {
-  width: 100%;
+  width: 96%;
 }
 .col-xs-12.team-member {
   padding-left: 0px;
@@ -686,10 +663,6 @@ a:hover {
   color: #ffffff;
   height: 60px;
 }
-
-
-
-
 
 
 
@@ -836,7 +809,7 @@ select, input[type="text"], input[type="password"], input[type="datetime"], inpu
    Sign Up Page styles
    ========================================================================== */
 #signup {
-  background: url(../img/testimonial-bg.jpg) no-repeat;
+  background: url(../img/samples/testimonial-bg.jpg) no-repeat;
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -847,7 +820,7 @@ select, input[type="text"], input[type="password"], input[type="datetime"], inpu
 } 
 
 .signup {
-  background: url(../img/grid_noise.png) repeat;
+  background: url(../img/samples/grid_noise.png) repeat;
   background-color: #ebebeb;
   padding: 40px;
   margin-top: 22px;
@@ -924,7 +897,7 @@ ul.social-icons-signup li a:hover {
    Latest Work and Portfolio Styles
    ========================================================================== */
 #latest-work {
-  background: url(../img/grid_noise.png) repeat;
+  background: url(../img/samples/grid_noise.png) repeat;
   background-color: #ebebeb;
 }
 
@@ -987,7 +960,7 @@ ul.icons li {
    Testimonial styles
    ========================================================================== */
 #testimonial {
-  background: url(../img/testimonial-bg.jpg) no-repeat;
+  background: url(../img/samples/testimonial-bg.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -998,7 +971,6 @@ ul.icons li {
   color: #FFFFFF;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 2px;
   margin-top: 25px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1139,7 +1111,6 @@ h1 {
   margin: auto;
 }
 
-
 .carousel-caption {
   max-width: 100%;
   text-align: center;
@@ -1165,10 +1136,6 @@ p.lead {
 
 .team-container {
   width: 100%;
-}
-
-.img-responsive {
-  margin: auto;
 }
 	
 }
@@ -1221,9 +1188,6 @@ p.lead {
   width: 100%;
 }
 
-.img-responsive {
-  margin: auto;
-}
 
 }
 

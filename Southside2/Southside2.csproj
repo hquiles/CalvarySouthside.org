@@ -161,8 +161,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LayoutController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -179,27 +179,24 @@
     <Content Include="assets\css\main.css" />
     <Content Include="assets\img\bg_direction_nav.png" />
     <Content Include="assets\img\grid_noise.png" />
-    <Content Include="assets\img\header1.jpg" />
-    <Content Include="assets\img\header2.jpg" />
-    <Content Include="assets\img\header3.jpg" />
-    <Content Include="assets\img\latest-news1.jpg" />
-    <Content Include="assets\img\latest-news2.jpg" />
-    <Content Include="assets\img\latest-news3.jpg" />
-    <Content Include="assets\img\latest-news4.jpg" />
     <Content Include="assets\img\logo.png" />
-    <Content Include="assets\img\multipage.jpg" />
-    <Content Include="assets\img\onepage.jpg" />
-    <Content Include="assets\img\pic1.jpg" />
-    <Content Include="assets\img\pic2.jpg" />
-    <Content Include="assets\img\pic3.jpg" />
-    <Content Include="assets\img\portfolio1.jpg" />
-    <Content Include="assets\img\portfolio2.jpg" />
-    <Content Include="assets\img\portfolio3.jpg" />
-    <Content Include="assets\img\team1.jpg" />
-    <Content Include="assets\img\team2.jpg" />
-    <Content Include="assets\img\team3.jpg" />
-    <Content Include="assets\img\testimonial-bg.jpg" />
-    <Content Include="assets\img\testimonial-img.png" />
+    <Content Include="assets\img\samples\header1.jpg" />
+    <Content Include="assets\img\samples\header2.jpg" />
+    <Content Include="assets\img\samples\header3.jpg" />
+    <Content Include="assets\img\samples\latest-news1.jpg" />
+    <Content Include="assets\img\samples\latest-news2.jpg" />
+    <Content Include="assets\img\samples\latest-news3.jpg" />
+    <Content Include="assets\img\samples\latest-news4.jpg" />
+    <Content Include="assets\img\samples\pic1.jpg" />
+    <Content Include="assets\img\samples\pic2.jpg" />
+    <Content Include="assets\img\samples\pic3.jpg" />
+    <Content Include="assets\img\samples\portfolio1.jpg" />
+    <Content Include="assets\img\samples\portfolio2.jpg" />
+    <Content Include="assets\img\samples\portfolio3.jpg" />
+    <Content Include="assets\img\samples\team2.jpg" />
+    <Content Include="assets\img\samples\team3.jpg" />
+    <Content Include="assets\img\samples\testimonial-bg.jpg" />
+    <Content Include="assets\img\samples\testimonial-img.png" />
     <Content Include="assets\js\bootstrap.min.js" />
     <Content Include="assets\js\jquery-1.10.1.min.js" />
     <Content Include="assets\js\jquery.flexslider-min.js" />
@@ -214,27 +211,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
-    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Manage.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\fonts\fontawesome-webfont.eot" />
@@ -242,6 +222,33 @@
     <None Include="assets\fonts\fontawesome-webfont.ttf" />
     <None Include="assets\fonts\fontawesome-webfont.woff" />
     <None Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="Views\Shared\NavigationPartial.cshtml" />
+    <Content Include="Views\Home\CarouselPartial.cshtml" />
+    <Content Include="Views\Home\ServicesPartial.cshtml" />
+    <Content Include="Views\Home\LatestNewsPartial.cshtml" />
+    <Content Include="Views\Home\LatestWorkPartial.cshtml" />
+    <Content Include="Views\Home\MessagePartial.cshtml" />
+    <Content Include="Views\Home\TestimonyPartial.cshtml" />
+    <Content Include="Views\Home\TwitterFeedPartial.cshtml" />
+    <Content Include="Views\Shared\FooterPartial.cshtml" />
+    <Content Include="Views\Layout\Icons.cshtml" />
+    <Content Include="Views\Layout\Index.cshtml" />
+    <Content Include="Views\Layout\ThreeColumn.cshtml" />
+    <Content Include="Views\Layout\FourColumn.cshtml" />
+    <Content Include="Views\Layout\About.cshtml" />
+    <Content Include="Views\Layout\Blog.cshtml" />
+    <Content Include="Views\Layout\BlogArticle.cshtml" />
+    <Content Include="Views\Layout\FullWidth.cshtml" />
+    <Content Include="Views\Layout\IndividualWork.cshtml" />
+    <Content Include="Views\Layout\Login.cshtml" />
+    <Content Include="Views\Layout\Pricing.cshtml" />
+    <Content Include="Views\Layout\Services.cshtml" />
+    <Content Include="Views\Layout\SignUp.cshtml" />
+    <Content Include="Views\Layout\Team.cshtml" />
+    <Content Include="Views\Layout\Home.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
