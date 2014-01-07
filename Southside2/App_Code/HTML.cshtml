@@ -1,0 +1,8 @@
+﻿@helper NavigationLink(string pageName, string url, string controller = "")
+{
+    var currentController = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+
+    <li class="@(!string.IsNullOrEmpty(controller) && controller.Equals(currentController, StringComparison.InvariantCultureIgnoreCase) ? "active" : string.Empty)">
+        <a href="@url">@pageName</a>
+    </li>
+}
