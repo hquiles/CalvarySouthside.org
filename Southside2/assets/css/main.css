@@ -40,6 +40,7 @@ h3 {
   letter-spacing: -1px;
   line-height: 34px;
   color: #626c72;
+  margin:0 0 30px;
 }
 
 h4 {
@@ -426,7 +427,7 @@ a:hover {
 
 #content1 {
   background: #ffffff;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 #content2 {
@@ -1059,8 +1060,7 @@ ul.icons li {
    ========================================================================== */
 #bottom {
   background: #31363A;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding:80px 0 40px;
 }
 
 #bottom p a {
