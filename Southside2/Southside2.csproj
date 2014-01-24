@@ -16,6 +16,10 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -153,9 +157,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\CalendarController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LayoutController.cs" />
+    <Compile Include="Controllers\MissionsController.cs" />
     <Compile Include="Controllers\ServeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -170,11 +177,29 @@
     <Content Include="assets\css\custom-styles.css" />
     <Content Include="assets\css\flexslider.css" />
     <Content Include="assets\css\font-awesome.min.css" />
-    <Content Include="assets\css\main.css" />
     <Content Include="assets\css\responsive-iframe.css" />
+    <Content Include="assets\css\style\blog.css" />
+    <Content Include="assets\css\style\content.css" />
+    <Content Include="assets\css\style\footer.css" />
+    <Content Include="assets\css\style\carousel.css" />
+    <Content Include="assets\css\style\global.css" />
+    <Content Include="assets\css\style\media-queries.css" />
+    <Content Include="assets\css\style\navigation.css" />
+    <Content Include="assets\css\style\page-home.css" />
+    <Content Include="assets\css\style\page-news.css" />
+    <Content Include="assets\css\style\page-testimonials.css" />
+    <Content Include="assets\css\style\page-work.css" />
+    <Content Include="assets\css\style\page-about.css" />
+    <Content Include="assets\css\style\page-contact.css" />
+    <Content Include="assets\css\style\page-signup.css" />
+    <Content Include="assets\css\style\page-team.css" />
     <Content Include="assets\img\bg_direction_nav.png" />
     <Content Include="assets\img\grid_noise.png" />
+    <Content Include="assets\img\hero\beach.jpg" />
+    <Content Include="assets\img\hero\beach2.jpg" />
+    <Content Include="assets\img\hero\jesus.png" />
     <Content Include="assets\img\logo.png" />
+    <Content Include="assets\img\photos\191_dougbecky.jpg" />
     <Content Include="assets\img\samples\header1.jpg" />
     <Content Include="assets\img\samples\header2.jpg" />
     <Content Include="assets\img\samples\header3.jpg" />
@@ -197,6 +222,7 @@
     <Content Include="assets\js\jquery.flexslider-min.js" />
     <Content Include="assets\js\main.js" />
     <Content Include="assets\js\modernizr-2.6.2-respond-1.1.0.min.js" />
+    <Content Include="favicon.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -231,22 +257,29 @@
     <Content Include="Views\Layout\Index.cshtml" />
     <Content Include="Views\Layout\ThreeColumn.cshtml" />
     <Content Include="Views\Layout\FourColumn.cshtml" />
-    <Content Include="Views\Layout\About.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Layout\Blog.cshtml" />
     <Content Include="Views\Layout\BlogArticle.cshtml" />
     <Content Include="Views\Layout\FullWidth.cshtml" />
     <Content Include="Views\Layout\IndividualWork.cshtml" />
     <Content Include="Views\Layout\Login.cshtml" />
-    <Content Include="Views\Layout\Pricing.cshtml" />
     <Content Include="Views\Layout\Services.cshtml" />
     <Content Include="Views\Layout\SignUp.cshtml" />
     <Content Include="Views\Layout\Team.cshtml" />
     <Content Include="Views\Layout\Home.cshtml" />
     <Content Include="Views\Calendar\Index.cshtml" />
     <Content Include="Views\Serve\Index.cshtml" />
+    <Content Include="Views\Missions\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\Core.csproj">
+      <Project>{5842ee19-55ca-4808-8113-ea5fb20e5c1f}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -3,14 +3,20 @@
     <div class="container">
         <div class="row margin-40">
             <div class="col-sm-10 col-sm-offset-1 text-center">
-                <p>
-                    <span class="fa fa-map-marker"></span> 4250 6th Street South St. Petersburg, Florida | 
-                    <span class="fa fa-phone"></span> (727) 593-4782 | 
-                    <a href="mailto:calvarysouthside@gmail.com">
-                        <span class="fa fa-envelope"></span> calvarysouthside@gmail.com
-                    </a>
-                </p>
-                <hr>
+                <div class="clearfix">
+                    <ul id="bottom-contact">
+                        <li>
+                            <a href="https://maps.google.com/maps?q=4250+6th+Street+South+St.+Petersburg,+Florida&hl=en&ll=27.730109,-82.639461&spn=0.01546,0.027208&sll=27.698638,-83.804601&sspn=15.798991,27.861328&t=m&hnear=4250+6th+St+S,+St+Petersburg,+Pinellas,+Florida+33705&z=16">
+                                <span class="fa fa-map-marker"></span>
+                                4250 6th Street South St. Petersburg, Florida
+                            </a>
+                        </li>
+                        <li>@HTML.PhoneNumber("(727) 593-4782", true)</li>
+                        <li>@HTML.EmailLink("calvarysouthside@gmail.com", true)</li>
+                    </ul>
+                </div>
+
+                <hr />
             </div>
         </div>
         <div class="row">

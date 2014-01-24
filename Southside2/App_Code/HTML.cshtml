@@ -6,3 +6,19 @@
         <a href="@url">@pageName</a>
     </li>
 }
+
+@helper EmailLink(string emailAddress, bool icon = false)
+{
+    <a href="mailto:@emailAddress.ToLower()">
+        @if (icon) { <span class="fa fa-envelope"></span> }
+        @emailAddress
+    </a>
+}
+
+@helper PhoneNumber(string phoneNumber, bool icon = false)
+{
+    <a href="@Core.Helpers.StringHelper.PhoneNumberLink(phoneNumber)">
+        @if (icon) { <span class="fa fa-phone"></span> }
+        @Core.Helpers.StringHelper.FormatPhoneNumber(phoneNumber)
+    </a>
+}

@@ -68,11 +68,6 @@ namespace Southside2.Controllers
             return View();
         }
 
-        public ActionResult Pricing()
-        {
-            return View();
-        }
-
         public ActionResult Services()
         {
             return View();
