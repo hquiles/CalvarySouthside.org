@@ -21,8 +21,6 @@ namespace Admin
 
             lvMessages.DataSource = messages;
             lvMessages.DataBind();
-
-            int x = 0;
         }
 
         protected string RenderName(object dataItem)

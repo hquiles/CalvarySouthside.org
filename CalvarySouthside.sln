@@ -30,9 +30,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalvarySouthside.org", "Cal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalvarySouthside", "CalvarySouthside\CalvarySouthside.csproj", "{2FF13F53-E67C-435F-A2E2-24278DDD81D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{5842EE19-55CA-4808-8113-EA5FB20E5C1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Infrastructure\Core.csproj", "{5842EE19-55CA-4808-8113-EA5FB20E5C1F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Southside2", "Southside2\Southside2.csproj", "{4E7EE4DE-3805-48FE-A872-BB96100F85BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Tests", "Core.Tests\Core.Tests.csproj", "{A5E908B9-7109-4733-81A8-29060FDE92A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +58,10 @@ Global
 		{4E7EE4DE-3805-48FE-A872-BB96100F85BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E7EE4DE-3805-48FE-A872-BB96100F85BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E7EE4DE-3805-48FE-A872-BB96100F85BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E908B9-7109-4733-81A8-29060FDE92A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E908B9-7109-4733-81A8-29060FDE92A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E908B9-7109-4733-81A8-29060FDE92A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E908B9-7109-4733-81A8-29060FDE92A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
