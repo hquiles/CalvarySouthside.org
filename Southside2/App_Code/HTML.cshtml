@@ -9,10 +9,7 @@
 
 @helper EmailLink(string emailAddress, bool icon = false)
 {
-    <a href="mailto:@emailAddress.ToLower()">
-        @if (icon) { <span class="fa fa-envelope"></span> }
-        @emailAddress
-    </a>
+    <a href="mailto:@emailAddress.ToLower()">@if (icon) { <span class="fa fa-envelope"></span> }@emailAddress</a>
 }
 
 @helper PhoneNumber(string phoneNumber, bool icon = false)
