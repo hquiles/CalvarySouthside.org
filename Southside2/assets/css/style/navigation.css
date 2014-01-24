@@ -1,0 +1,137 @@
+﻿/* ==========================================================================
+   Navigation styles
+   ========================================================================== */
+.navbar-inverse {
+    border-color: transparent;
+    background: #fb6716; /* Old browsers */
+    background: -moz-linear-gradient(top, #fb6716 0%, #f34b0c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fb6716), color-stop(100%,#f34b0c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fb6716 0%,#f34b0c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fb6716 0%,#f34b0c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fb6716 0%,#f34b0c 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #fb6716 0%,#f34b0c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb6716', endColorstr='#f34b0c',GradientType=0 ); /* IE6-9 */
+}
+
+
+.nav-collapse, .nav-collapse.collapse {
+    background: none repeat scroll 0 0 #f5500e;
+    height: 0;
+    overflow: hidden;
+}
+
+.nav > li > a {
+    color: #ffdfa6;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navbar-brand {
+    margin-top: 4px;
+}
+
+.navbar .nav > li > a {
+    color: #ffdfa6;
+    float: none;
+    padding: 35px 16px;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: -0.7px;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.5);
+}
+
+    .navbar .nav > li > a:hover {
+        color: #fff;
+    }
+
+.navbar-inverse .nav .active {
+}
+
+    .navbar-inverse .nav .active > a,
+    .navbar-inverse .nav .active > a:hover,
+    .navbar-inverse .nav .active > a:focus {
+        background-color: transparent;
+        color: #fff;
+    }
+
+.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
+    border-bottom-color: rgba(49,54,58,0.4);
+    border-top-color: rgba(49,54,58,0.4);
+}
+
+.navbar-inverse .nav li.dropdown > a:hover .caret, .navbar-inverse .nav li.dropdown > a:focus .caret {
+    border-bottom-color: rgba(49,54,58,0.4);
+    border-top-color: rgba(49,54,58,0.4);
+    transition: all 0.35s ease-in-out;
+}
+
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: transparent;
+}
+
+
+.dropdown-menu {
+    background-clip: padding-box;
+    background-color: #31363a;
+    color: #FFFFFF;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    float: left;
+    left: 0;
+    list-style: none outside none;
+    margin: 1px 0 0;
+    min-width: 160px;
+    padding: 12px;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+
+.navbar .nav > li > .dropdown-menu:before, .navbar .nav > li > .dropdown-menu:after {
+    display: none;
+}
+
+.nav-collapse .dropdown-menu a {
+    font-weight: normal;
+}
+
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+    background-color: transparent;
+    background-image: none;
+    background-image: -webkit-linear-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(transparent));
+    background-repeat: no-repeat;
+    color: #c2564a; /* #f5500e; */
+    text-decoration: none;
+}
+
+.dropdown-menu > li > a {
+    clear: both;
+    color: #FFFFFF;
+    display: block;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 3px 20px;
+    white-space: nowrap;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-toggle {
+    margin-top: 18px;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:active, .navbar-inverse .navbar-toggle.active, .navbar-inverse .navbar-toggle.disabled, .navbar-inverse .navbar-toggle[disabled] {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,35 @@
+﻿/* ==========================================================================
+   Team Member Styles
+   ========================================================================== */
+.team-container {
+    width: 96%;
+}
+
+.col-xs-12.team-member {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.team-member img {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.team-info {
+    background: #f5500e;
+    padding: 10px 10px 10px 10px;
+    height: 60px;
+}
+
+    .team-info h4, .team-info h4 em {
+        color: #ffffff;
+        line-height: 12px;
+    }
+
+.socialize {
+    background: #31363a;
+    padding: 20px 10px 10px 10px;
+    color: #ffffff;
+    height: 60px;
+}

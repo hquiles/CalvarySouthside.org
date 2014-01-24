@@ -1,0 +1,20 @@
+﻿/* ==========================================================================
+   Testimonial styles
+   ========================================================================== */
+#testimonial {
+    background: url(../../img/samples/testimonial-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.testimonial-source {
+    background: #f5500e;
+    text-align: center;
+    padding: 12px 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}

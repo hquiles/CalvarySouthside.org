@@ -1,0 +1,73 @@
+﻿/* ==========================================================================
+   Content Styles
+   ========================================================================== */
+.section {
+    padding: 60px 0;
+}
+
+#content1 {
+    background: #ffffff;
+    margin-top: 80px;
+    color: #717b80;
+}
+
+    #content1 strong {
+        color: #545b5e;
+    }
+
+    #content1 a {
+        color:#f5500e;
+        font-weight:bold;
+        background-color:#ffeec5;
+        padding: 0 2px;
+        border-radius: 2px;
+    }
+
+    #content1 a:hover {
+        color:#e83d00;
+        background-color:transparent;
+    }
+
+#content2 {
+    background: url(../../img/samples/grid_noise.png) repeat;
+    background-color: #ebebeb;
+}
+
+#page-title {
+    background: #ffffff;
+    margin-top: 50px;
+}
+
+#message {
+    background: #a5b2b9;
+    color: #e8eced;
+}
+
+    #message a {
+        color: #e8eced;
+        border-bottom: 1px solid #c0c9ce;
+    }
+
+        #message a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+
+
+.service:hover i {
+    color: #626c72;
+    transition: all 0.35s ease-in-out;
+    cursor: pointer;
+}
+
+.service h3 {
+    margin-top: 40px;
+}
+
+.service-icons {
+    padding-top: 20px;
+}
+
+#twitter {
+    background: #dfe5e8;
+}

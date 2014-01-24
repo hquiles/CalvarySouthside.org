@@ -1,0 +1,15 @@
+﻿#hero {
+    margin-bottom: 0px;
+    background: #31363a;
+    height:500px;
+    margin-top:80px;
+    text-align:center;
+
+    background: url(../../img/hero/beach2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#hero img {
+    max-height:100%;
+    max-width:100%;
+}

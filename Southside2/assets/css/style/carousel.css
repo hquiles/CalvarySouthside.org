@@ -1,0 +1,80 @@
+﻿.carousel {
+    margin-bottom: 0px;
+    background: #31363a;
+}
+
+    .carousel .container {
+        position: relative;
+        z-index: 9;
+    }
+
+.carousel-control {
+    background: none repeat scroll 0 0;
+    background-color: rgba(245,80,14,0.9);
+    border: 0px solid;
+    font-size: 22px;
+    font-weight: bold;
+    width: 5%;
+    margin-top: 300px;
+    text-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+    z-index: 10;
+    opacity: 1;
+    bottom: auto;
+    padding: 0.75em 0;
+}
+
+    .carousel-control.left {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0) 0px, rgba(0, 0, 0, 0) 0%);
+        background-repeat: repeat-x;
+        -webkit-border-top-right-radius: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+        -moz-border-radius-topright: 4px;
+        -moz-border-radius-bottomright: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .carousel-control.right {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.0) 0%);
+        background-repeat: repeat-x;
+        left: auto;
+        right: 0;
+        -webkit-border-top-left-radius: 4px;
+        -webkit-border-bottom-left-radius: 4px;
+        -moz-border-radius-topleft: 4px;
+        -moz-border-radius-bottomleft: 4px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .carousel-control:hover {
+        opacity: 0.7;
+    }
+
+.carousel .item {
+    height: 650px;
+}
+
+.one {
+    background: url(../../img/hero/beach.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.two {
+    background: url(../../img/samples/header2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.three {
+    background: url(../../img/samples/header3.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+.carousel-caption {
+    background-color: transparent;
+    position: static;
+    padding: 0 20px;
+    margin-top: 36%;
+    text-align: left;
+}

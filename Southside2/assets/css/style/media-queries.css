@@ -1,0 +1,118 @@
+﻿/* ==========================================================================
+   Mobiles styles
+   ========================================================================== */
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 40px;
+        line-height: 38px;
+    }
+
+    .navbar .nav > li > a {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #FFFFFF;
+    }
+
+    .img-responsive {
+        margin: auto;
+    }
+
+    .carousel-caption {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .carousel .item {
+        height: 460px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    h3 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    p.lead {
+        font-size: 18px;
+    }
+
+    .team-container {
+        width: 100%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    h1 {
+        font-size: 40px;
+        line-height: 38px;
+    }
+
+    .navbar .nav > li > a {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #FFFFFF;
+    }
+
+    .img-responsive {
+        margin: auto;
+    }
+
+    .carousel-caption {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .carousel .item {
+        height: 460px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    h3 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    p.lead {
+        font-size: 18px;
+    }
+
+    .team-container {
+        width: 100%;
+    }
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+
+/* Desktops and laptops ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+
+
+/* Large screens ----------- */
+@media (min-width: 1200px) and (max-width: 3000px) {
+}

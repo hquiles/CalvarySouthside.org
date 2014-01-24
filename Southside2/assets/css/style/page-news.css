@@ -1,0 +1,42 @@
+﻿/* ==========================================================================
+   Latest News styles
+   ========================================================================== */
+#latest-news {
+    background: #ffffff;
+}
+
+
+.latest-article img {
+    margin-bottom: 15px;
+    margin: 0 auto;
+}
+
+.latest-article p {
+    font-size: 13px;
+    text-align: center;
+    color: #626C72;
+}
+
+.latest-article {
+    position: relative;
+    padding: 10px 10px 30px 10px;
+    background: #dfe5e8;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+
+    .latest-article:after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 45%;
+        border-style: solid;
+        border-width: 15px 15px 0;
+        border-color: #dfe5e8 transparent;
+        display: block;
+        width: 0;
+        z-index: 1;
+    }
