@@ -3,14 +3,14 @@
    ========================================================================== */
 .navbar-inverse {
     border-color: transparent;
-    background: #fb6716; /* Old browsers */
-    background: -moz-linear-gradient(top, #fb6716 0%, #f34b0c 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fb6716), color-stop(100%,#f34b0c)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #fb6716 0%,#f34b0c 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #fb6716 0%,#f34b0c 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #fb6716 0%,#f34b0c 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #fb6716 0%,#f34b0c 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb6716', endColorstr='#f34b0c',GradientType=0 ); /* IE6-9 */
+    background: #f3a76a; /* Old browsers */
+    background: -moz-linear-gradient(top, #f3a76a 0%, #ee8b47 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3a76a), color-stop(100%,#ee8b47)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f3a76a 0%,#ee8b47 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f3a76a 0%,#ee8b47 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f3a76a 0%,#ee8b47 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f3a76a 0%,#ee8b47 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3a76a', endColorstr='#ee8b47',GradientType=0 ); /* IE6-9 */
 }
 
 
@@ -38,8 +38,7 @@
     padding: 35px 16px;
     text-decoration: none;
     text-shadow: none;
-    letter-spacing: -0.7px;
-    text-shadow: 0 1px 0px rgba(0,0,0,0.5);
+    text-shadow: 0 1px 0px rgba(0,0,0,0.3);
 }
 
     .navbar .nav > li > a:hover {
@@ -54,6 +53,7 @@
     .navbar-inverse .nav .active > a:focus {
         background-color: transparent;
         color: #fff;
+        text-shadow: 0 1px 0px rgba(0,0,0,0.5);
     }
 
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
@@ -134,4 +134,8 @@
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-fixed-top {
+    border-width: 0;
 }

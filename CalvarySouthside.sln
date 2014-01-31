@@ -6,7 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalvarySouthside.org", "CalvarySouthside.org\", "{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		ProjectReferences = "{2FF13F53-E67C-435F-A2E2-24278DDD81D0}|CalvarySouthside.dll;{5842EE19-55CA-4808-8113-EA5FB20E5C1F}|Infrastructure.dll;"
+		ProjectReferences = "{2FF13F53-E67C-435F-A2E2-24278DDD81D0}|CalvarySouthside.dll;{5842EE19-55CA-4808-8113-EA5FB20E5C1F}|Core.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/CalvarySouthside.org"
 		Debug.AspNetCompiler.PhysicalPath = "CalvarySouthside.org\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CalvarySouthside.org\"
@@ -30,7 +30,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalvarySouthside.org", "Cal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalvarySouthside", "CalvarySouthside\CalvarySouthside.csproj", "{2FF13F53-E67C-435F-A2E2-24278DDD81D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Infrastructure\Core.csproj", "{5842EE19-55CA-4808-8113-EA5FB20E5C1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{5842EE19-55CA-4808-8113-EA5FB20E5C1F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Southside2", "Southside2\Southside2.csproj", "{4E7EE4DE-3805-48FE-A872-BB96100F85BD}"
 EndProject
