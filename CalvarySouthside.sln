@@ -3,31 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Web
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalvarySouthside.org", "CalvarySouthside.org\", "{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		ProjectReferences = "{2FF13F53-E67C-435F-A2E2-24278DDD81D0}|CalvarySouthside.dll;{5842EE19-55CA-4808-8113-EA5FB20E5C1F}|Core.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/CalvarySouthside.org"
-		Debug.AspNetCompiler.PhysicalPath = "CalvarySouthside.org\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CalvarySouthside.org\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/CalvarySouthside.org"
-		Release.AspNetCompiler.PhysicalPath = "CalvarySouthside.org\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CalvarySouthside.org\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "6160"
-		VWDDynamicPort = "true"
-		VWDVirtualPath = "/"
-		SlnRelativePath = "CalvarySouthside.org\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalvarySouthside", "CalvarySouthside\CalvarySouthside.csproj", "{2FF13F53-E67C-435F-A2E2-24278DDD81D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{5842EE19-55CA-4808-8113-EA5FB20E5C1F}"
@@ -42,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{23C4F9BE-7693-43C0-B3C7-F13D514E4DF1}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{2FF13F53-E67C-435F-A2E2-24278DDD81D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2FF13F53-E67C-435F-A2E2-24278DDD81D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FF13F53-E67C-435F-A2E2-24278DDD81D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
