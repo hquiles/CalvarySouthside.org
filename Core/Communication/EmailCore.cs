@@ -32,7 +32,14 @@ namespace Core.Communication
             client.Port = int.Parse(emailSettings["smtpPort"]);
             client.EnableSsl = bool.Parse(emailSettings["smtpEnableSsl"]);
 
-            client.Send(mail);
+            try
+            {
+                client.Send(mail);
+            }
+            catch (Exception ex)
+            {
+                // TODO: log exception
+            }
         }
     }
 }
