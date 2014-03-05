@@ -22,8 +22,7 @@
 
 .nav > li > a {
     color: #ffdfa6;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-family: 'proxima_nova_bold', sans-serif;
     text-transform: uppercase;
     font-size: 14px;
 }

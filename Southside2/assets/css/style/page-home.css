@@ -1,15 +1,64 @@
 ﻿#hero {
     margin-bottom: 0px;
     background: #31363a;
-    height:500px;
-    margin-top:80px;
-    text-align:center;
-
+    height: 430px;
+    margin-top: 80px;
+    text-align: center;
     background: url(../../img/hero/beach2.jpg) no-repeat center center;
     background-size: cover;
 }
 
-#hero img {
-    max-height:100%;
-    max-width:100%;
+    #hero #hero_overlay {
+        width: 100%;
+        height: 100%;
+        background: url(/assets/img/hero/jesus.png) center center no-repeat;
+    }
+
+        #hero #hero_overlay>* {
+            display: none;
+        }
+
+
+#hero_sub_wrap {
+    background-color:#ddd;
+}
+
+#hero_sub {
+    /*padding:0.5em;
+    border:1px solid rgba(255,255,255, 0.5);*/
+    background-color:rgba(255,255,255, 0.5);
+
+    margin-top:-2em;
+    margin-bottom:-2em;
+
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.45);
+    -moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.45);
+    box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.45);
+}
+
+#hero_sub_sidebar {
+    background-color:#5b373c;
+    color:#fff;
+
+    width:38.2%;
+    float:left;
+
+    text-align:right;
+}
+
+#hero_sub_sidebar h3 {
+    color:#ffdfa6;
+}
+
+#hero_sub_content {
+    background-color:#fff;
+    color:#000;
+
+    width:61.8%;
+    float:left;
+}
+
+#hero_sub_sidebar,
+#hero_sub_content {
+    padding:2em;
 }

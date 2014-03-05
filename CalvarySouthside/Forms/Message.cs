@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Infrastructure;
+using CalvarySouthside.Infrastructure;
 using System.Data.SqlClient;
 using System.Data;
+using THREE17.Core.Communication;
 
 namespace CalvarySouthside.Forms
 {
@@ -102,14 +103,26 @@ namespace CalvarySouthside.Forms
         {
             Key = Guid.NewGuid();
 
+            StringBuilder sbEmailMessage = new StringBuilder();
+            sbEmailMessage.AppendFormat("Type: {0}<br />", MessageType);
+            sbEmailMessage.AppendFormat("Name: {0} {1}<br />", FirstName, LastName);
+            sbEmailMessage.AppendFormat("Request Anonymity{0}<br />", Anonymous);
+            sbEmailMessage.AppendFormat("Email Address: {0}<br />", MessageType);
+            sbEmailMessage.AppendFormat("Message: {0}<br />", MessageBody);
+
+            Email.Send(to: "bharrison912@gmail.com"
+                ,subject: "New Website Message"
+                ,message: sbEmailMessage.ToString()
+                );
+
             Database.ExecuteStoredProcedure("sp_Message_Insert"
                 , new SqlParameter("@Key", Key)
                 , new SqlParameter("@MessageType", MessageType)
                 , new SqlParameter("@Anonymous", Anonymous)
-                , new SqlParameter("@LastName", LastName)
-                , new SqlParameter("@FirstName", FirstName)
-                , new SqlParameter("@EmailAddress", EmailAddress)
-                , new SqlParameter("@MessageBody", MessageBody)
+                , new SqlParameter("@LastName", LastName ?? string.Empty)
+                , new SqlParameter("@FirstName", FirstName ?? string.Empty)
+                , new SqlParameter("@EmailAddress", EmailAddress ?? string.Empty)
+                , new SqlParameter("@MessageBody", MessageBody ?? string.Empty)
                 );
 
         }

@@ -7,10 +7,16 @@ body {
     line-height: 24px;
     font-weight: 300;
     color: #a5b2b9;
+    font-family: 'proxima_nova', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, body {
-    font-family: 'Open Sans', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'proxima_nova_bold', sans-serif;
+    font-weight:normal;
+}
+
+strong {
+    font-family: 'proxima_nova_black', sans-serif;
 }
 
 h1 {

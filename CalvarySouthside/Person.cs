@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
-using Infrastructure;
+using CalvarySouthside.Infrastructure;
 using System.Data.SqlClient;
 
 namespace CalvarySouthside

@@ -15,6 +15,7 @@
         color: #545b5e;
     }
 
+    /*
     #content1 a {
         color:#f5500e;
         font-weight:bold;
@@ -27,6 +28,7 @@
         color:#e83d00;
         background-color:transparent;
     }
+    */
 
 #content2 {
     background: url(../../img/samples/grid_noise.png) repeat;
