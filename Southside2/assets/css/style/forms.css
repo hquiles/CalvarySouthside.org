@@ -4,8 +4,8 @@
 }
 
 .form-control:focus {
-    border-color: #f5500e;
+    border-color: #f8a74e;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(245,80,14,0.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(245,80,14,0.6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(248,167,78,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(248,167,78,0.6);
 }
