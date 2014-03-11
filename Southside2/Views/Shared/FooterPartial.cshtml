@@ -1,4 +1,5 @@
-﻿<!--Bottom Section-->
+﻿@using CalvarySouthside
+<!--Bottom Section-->
 <section id="bottom">
     <div class="container">
         <div class="row margin-40">
@@ -6,13 +7,13 @@
                 <div class="clearfix">
                     <ul id="bottom-contact">
                         <li>
-                            <a href="https://maps.google.com/maps?q=4250+6th+Street+South+St.+Petersburg,+Florida&hl=en&ll=27.730109,-82.639461&spn=0.01546,0.027208&sll=27.698638,-83.804601&sspn=15.798991,27.861328&t=m&hnear=4250+6th+St+S,+St+Petersburg,+Pinellas,+Florida+33705&z=16">
+                            <a href="@ConfigurationHelper.GoogleMapsUrl">
                                 <span class="fa fa-map-marker"></span>
-                                4250 6th Street South St. Petersburg, Florida
+                                @ConfigurationHelper.ChurchAddress
                             </a>
                         </li>
-                        <li>@HTML.PhoneNumber("(727) 593-4782", true)</li>
-                        <li>@HTML.EmailLink("calvarysouthside@gmail.com", true)</li>
+                        <li>@HTML.PhoneNumber(ConfigurationHelper.ChurchPhoneNumber, true)</li>
+                        <li>@HTML.EmailLink(ConfigurationHelper.ChurchEmailAddress, true)</li>
                     </ul>
                 </div>
 

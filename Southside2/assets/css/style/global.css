@@ -122,13 +122,15 @@ a {
 }
 
 ::selection {
-    background: #f5500e; /* Safari */
-    color: #FFFFFF;
+    background: #7b8cba; /* Safari */
+    color: #fff;
+    text-shadow:none;
 }
 
 ::-moz-selection {
-    background: #f5500e; /* Firefox */
-    color: #FFFFFF;
+    background: #7b8cba; /* Firefox */
+    color: #fff;
+    text-shadow:none;
 }
 
 /*-----------Margins-----------------*/
