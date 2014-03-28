@@ -259,7 +259,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/07/2014 12:22:32</publishTime>
     </File>
     <File Include="bin/Southside2.dll">
-      <publishTime>03/27/2014 23:47:27</publishTime>
+      <publishTime>03/28/2014 00:06:40</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Extensions.dll">
       <publishTime>03/04/2014 19:21:17</publishTime>
@@ -319,10 +319,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/04/2014 22:47:39</publishTime>
     </File>
     <File Include="Views/Calendar/Index.cshtml">
-      <publishTime>01/07/2014 11:38:44</publishTime>
+      <publishTime>03/28/2014 00:04:07</publishTime>
     </File>
     <File Include="Views/Contact/Index.cshtml">
-      <publishTime>03/25/2014 21:42:08</publishTime>
+      <publishTime>03/28/2014 00:03:45</publishTime>
+    </File>
+    <File Include="Views/Contact/ThankYou.cshtml">
+      <publishTime>03/28/2014 00:04:38</publishTime>
     </File>
     <File Include="Views/Home/CarouselPartial.cshtml">
       <publishTime>01/07/2014 11:38:44</publishTime>
@@ -415,7 +418,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/07/2014 11:38:44</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/27/2014 23:47:28</publishTime>
+      <publishTime>03/28/2014 00:06:41</publishTime>
     </File>
   </ItemGroup>
 </Project>

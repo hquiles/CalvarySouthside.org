@@ -17,6 +17,11 @@ namespace Southside2.Controllers
             return View();
         }
 
+        public ActionResult ThankYou()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Index(Southside2.Models.ContactModel contactModel)
         {
@@ -30,6 +35,8 @@ namespace Southside2.Controllers
             message.MessageBody = contactModel.MessageBody;
 
             message.Submit();
+
+            Response.Redirect("/Contact/ThankYou");
 
             return View();
         }

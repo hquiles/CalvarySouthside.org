@@ -295,6 +295,7 @@
     <Content Include="assets\fonts\ProximaNova\proximanova-bold-webfont.ttf" />
     <Content Include="assets\fonts\ProximaNova\proximanova-bold-webfont.woff" />
     <None Include="Properties\PublishProfiles\Southside.pubxml" />
+    <Content Include="Views\Contact\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
