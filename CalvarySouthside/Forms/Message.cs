@@ -110,20 +110,21 @@ namespace CalvarySouthside.Forms
             sbEmailMessage.AppendFormat("Email Address: {0}<br />", MessageType);
             sbEmailMessage.AppendFormat("Message: {0}<br />", MessageBody);
 
-            Email.Send(to: "bharrison912@gmail.com"
+            var email = new Email();
+            email.Send(to: "calvarysouthside@gmail.com"
                 ,subject: "New Website Message"
                 ,message: sbEmailMessage.ToString()
                 );
 
-            Database.ExecuteStoredProcedure("sp_Message_Insert"
-                , new SqlParameter("@Key", Key)
-                , new SqlParameter("@MessageType", MessageType)
-                , new SqlParameter("@Anonymous", Anonymous)
-                , new SqlParameter("@LastName", LastName ?? string.Empty)
-                , new SqlParameter("@FirstName", FirstName ?? string.Empty)
-                , new SqlParameter("@EmailAddress", EmailAddress ?? string.Empty)
-                , new SqlParameter("@MessageBody", MessageBody ?? string.Empty)
-                );
+            //Database.ExecuteStoredProcedure("sp_Message_Insert"
+            //    , new SqlParameter("@Key", Key)
+            //    , new SqlParameter("@MessageType", MessageType)
+            //    , new SqlParameter("@Anonymous", Anonymous)
+            //    , new SqlParameter("@LastName", LastName ?? string.Empty)
+            //    , new SqlParameter("@FirstName", FirstName ?? string.Empty)
+            //    , new SqlParameter("@EmailAddress", EmailAddress ?? string.Empty)
+            //    , new SqlParameter("@MessageBody", MessageBody ?? string.Empty)
+            //    );
 
         }
 

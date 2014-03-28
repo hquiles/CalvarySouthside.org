@@ -1,4 +1,6 @@
-﻿@model Southside2.Models.ContactModel
+﻿@using CalvarySouthside
+
+@model Southside2.Models.ContactModel
 @{
     ViewBag.Title = "Index";
 }
@@ -8,53 +10,70 @@
 
         <h3>Contact</h3>
 
-        <p>
-            Please contact us via e-mail at
-            @HTML.EmailLink("calvarysouthside@gmail.com")
-            or at
-            @HTML.PhoneNumber("(727) 593-4782")
-        </p>
+        <div class="row">
+            <div class="col-md-8">
 
-        <div class="form-horizontal" role="form">
-            @using (Html.BeginForm())
-            {
-                @Html.AntiForgeryToken()
-                @Html.ValidationSummary(true)
-                
-                <div class="form-group">
-                    <label for="txtFirstname" class="col-sm-2 control-label">First Name</label>
-                    <div class="col-sm-10">
-                        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", placeholder="First Name", id = "txtFirstname" })
-                    </div>
+                <div class="form-horizontal" role="form">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+
+                        <div class="form-group">
+                            <label for="txtFirstname" class="col-sm-2 control-label">First Name</label>
+                            <div class="col-sm-10">
+                                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", placeholder = "First Name", id = "txtFirstname" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtLastname" class="col-sm-2 control-label">Last Name</label>
+                            <div class="col-sm-10">
+                                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", placeholder = "Last Name", id = "txtLastname" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEmailAddress" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control", placeholder = "Email Address", id = "txtEmailAddress" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtMessageBody" class="col-sm-2 control-label">Message</label>
+                            <div id="contact-form-message" class="col-sm-10">
+                                @Html.TextAreaFor(m => m.MessageBody, new { @class = "form-control", rows = 3, id = "txtMessageBody" })
+                            </div>
+                        </div>
+
+                        @Html.HiddenFor(m => m.Anonymous, new { value = "false" })
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-success">Send</button>
+                            </div>
+                        </div>
+                    }
                 </div>
-                <div class="form-group">
-                    <label for="txtLastname" class="col-sm-2 control-label">Last Name</label>
-                    <div class="col-sm-10">
-                        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", placeholder = "Last Name", id = "txtLastname" })
-                    </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <h4>Other Contact Options</h4>
+                    
+                    <p>
+                        @HTML.EmailLink(ConfigurationHelper.ChurchEmailAddress)
+                    </p>
+                    
+                    <p>
+                        @HTML.PhoneNumber(ConfigurationHelper.ChurchPhoneNumber)
+                    </p>
+
+                    <p>
+                        @ConfigurationHelper.ChurchAddress
+                    </p>
+
+                    @HTML.MapThumbnail()
                 </div>
-                <div class="form-group">
-                    <label for="txtEmailAddress" class="col-sm-2 control-label">Email Address</label>
-                    <div class="col-sm-10">
-                        @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control", placeholder = "Email Address", id = "txtEmailAddress" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="txtMessageBody" class="col-sm-2 control-label">Message</label>
-                    <div class="col-sm-10">
-                        @Html.TextAreaFor(m => m.MessageBody, new { @class = "form-control", rows = 3, id="txtMessageBody" })
-                    </div>
-                </div>
-                
-                @Html.HiddenFor(m => m.Anonymous, new { value = "false" })
-                
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-success">Send</button>
-                    </div>
-                </div>
-            }
+            </div>
         </div>
-
     </div>
 </section>

@@ -222,6 +222,7 @@
     <Content Include="assets\img\samples\team3.jpg" />
     <Content Include="assets\img\samples\testimonial-bg.jpg" />
     <Content Include="assets\img\samples\testimonial-img.png" />
+    <Content Include="assets\img\ui\map.png" />
     <Content Include="assets\js\bootstrap.min.js" />
     <Content Include="assets\js\jquery-1.10.1.min.js" />
     <Content Include="assets\js\jquery.flexslider-min.js" />
@@ -293,6 +294,7 @@
     <Content Include="assets\fonts\ProximaNova\proximanova-bold-webfont.eot" />
     <Content Include="assets\fonts\ProximaNova\proximanova-bold-webfont.ttf" />
     <Content Include="assets\fonts\ProximaNova\proximanova-bold-webfont.woff" />
+    <None Include="Properties\PublishProfiles\Southside.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
