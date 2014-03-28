@@ -2,6 +2,12 @@
    Global styles
    ========================================================================== */
 
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 body {
     font-size: 16px;
     line-height: 24px;
@@ -188,9 +194,9 @@ a {
 
 /*------------Colors------------------*/
 
-.black {
+/*.black {
     color: #31363a;
-}
+}*/
 
 .dark-gray {
     color: #626c72;
