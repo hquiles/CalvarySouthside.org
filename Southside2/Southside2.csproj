@@ -185,6 +185,7 @@
     <Content Include="assets\css\style\forms.css" />
     <Content Include="assets\css\style\global.css" />
     <Content Include="assets\css\style\media-queries.css" />
+    <Content Include="assets\css\style\media-widget.css" />
     <Content Include="assets\css\style\navigation.css" />
     <Content Include="assets\css\style\page-home.css" />
     <Content Include="assets\css\style\page-news.css" />
@@ -256,7 +257,7 @@
     <None Include="assets\fonts\FontAwesome.otf" />
     <Content Include="Views\Shared\NavigationPartial.cshtml" />
     <Content Include="Views\Home\CarouselPartial.cshtml" />
-    <Content Include="Views\Home\WelcomePartial.cshtml" />
+    <Content Include="Views\Home\SermonsPartial.cshtml" />
     <Content Include="Views\Home\LatestNewsPartial.cshtml" />
     <Content Include="Views\Home\LatestWorkPartial.cshtml" />
     <Content Include="Views\Home\MessagePartial.cshtml" />
