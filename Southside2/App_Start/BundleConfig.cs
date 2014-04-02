@@ -23,21 +23,27 @@ namespace Southside2
             //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
             //            "~/Scripts/modernizr-*"));
 
-            //bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+            // TODO: remove page-*.css
+            bundles.Add(new StyleBundle("~/bundles/css").Include(
+                 "~/assets/css/typography.css"
+                ,"~/assets/css/style/global.css"
+                ,"~/assets/css/style/navigation.css"
+                ,"~/assets/css/style/page-home.css"
+                ,"~/assets/css/style/content.css"
+                ,"~/assets/css/style/blog.css"
+                ,"~/assets/css/style/page-about.css"
+                ,"~/assets/css/style/page-team.css"
+                ,"~/assets/css/style/page-contact.css"
+                ,"~/assets/css/style/page-work.css"
+                ,"~/assets/css/style/page-testimonials.css"
+                ,"~/assets/css/style/page-news.css"
+                ,"~/assets/css/style/forms.css"
+                ,"~/assets/css/style/footer.css"
+                ,"~/assets/css/style/media-queries.css"
+                ,"~/assets/css/style/media-widget.css"
+                ,"~/assets/css/responsive-iframe.css"
+                ));
 
-            //bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
-            //            "~/Content/themes/base/jquery.ui.core.css",
-            //            "~/Content/themes/base/jquery.ui.resizable.css",
-            //            "~/Content/themes/base/jquery.ui.selectable.css",
-            //            "~/Content/themes/base/jquery.ui.accordion.css",
-            //            "~/Content/themes/base/jquery.ui.autocomplete.css",
-            //            "~/Content/themes/base/jquery.ui.button.css",
-            //            "~/Content/themes/base/jquery.ui.dialog.css",
-            //            "~/Content/themes/base/jquery.ui.slider.css",
-            //            "~/Content/themes/base/jquery.ui.tabs.css",
-            //            "~/Content/themes/base/jquery.ui.datepicker.css",
-            //            "~/Content/themes/base/jquery.ui.progressbar.css",
-            //            "~/Content/themes/base/jquery.ui.theme.css"));
         }
     }
 }

@@ -42,6 +42,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -114,6 +117,9 @@
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
     <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
@@ -174,7 +180,6 @@
     <Content Include="assets\css\animate.css" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\bootstrap\buttons.css" />
-    <Content Include="assets\css\custom-styles.css" />
     <Content Include="assets\css\flexslider.css" />
     <Content Include="assets\css\font-awesome.min.css" />
     <Content Include="assets\css\responsive-iframe.css" />
@@ -297,6 +302,7 @@
     <Content Include="assets\fonts\ProximaNova\proximanova-bold-webfont.woff" />
     <None Include="Properties\PublishProfiles\Southside.pubxml" />
     <Content Include="Views\Contact\ThankYou.cshtml" />
+    <Content Include="Views\Shared\AnalyticsPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

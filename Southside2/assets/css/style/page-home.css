@@ -4,7 +4,7 @@
     height: 430px;
     margin-top: 80px;
     text-align: center;
-    background: url(../../img/hero/beach2.jpg) no-repeat center center;
+    background: url(/assets/img/hero/beach2.jpg) no-repeat center center;
     background-size: cover;
 }
 

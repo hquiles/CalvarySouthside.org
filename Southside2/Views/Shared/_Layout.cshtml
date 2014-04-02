@@ -4,55 +4,27 @@
     <meta charset="utf-8">
     <title>@ViewBag.Title | Calvary Chapel Southside</title>
 
-    <meta name="keywords" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
-    <meta name="description" content="">
+    <meta name="keywords" content="jesus christ st pete petersbug fl florida southside">
+    <meta name="description" content="Calvary Chapel Southside is a non-denominational, come as you are ministry in St Petersburg, FL. We have a heart to impact the surrounding area with the love of Jesus Christ.">
     <meta name="viewport" content="width=device-width">
-
-    @*
-    <meta property="og:title" content="Lava | Designed By Theme Armada">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.themearmada.com/demos/lava">
-    <meta property="og:site_name" content="Theme Armada">
-    <meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
-    *@
-
-    <!-- Styles -->
+    
+    <!-- the strap of the boot -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <!--link rel="stylesheet" href="/assets/css/animate.css"-->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-    <!--link rel="stylesheet" href="/assets/css/bootstrap/buttons.css"-->
 
-    @* original main.css broken apart into separate files
-    TODO: create a bundle for these    
-     *@
-    <link rel="stylesheet" href="/assets/css/typography.css">
-    <link rel="stylesheet" href="/assets/css/style/global.css">
-    <link rel="stylesheet" href="/assets/css/style/navigation.css">
-    <link rel="stylesheet" href="/assets/css/style/page-home.css">
-    <link rel="stylesheet" href="/assets/css/style/content.css">
-    <link rel="stylesheet" href="/assets/css/style/blog.css">
-    <link rel="stylesheet" href="/assets/css/style/page-about.css">
-    <link rel="stylesheet" href="/assets/css/style/page-team.css">
-    <link rel="stylesheet" href="/assets/css/style/page-contact.css">
-    <link rel="stylesheet" href="/assets/css/style/page-work.css">
-    <link rel="stylesheet" href="/assets/css/style/page-testimonials.css">
-    <link rel="stylesheet" href="/assets/css/style/page-news.css">
-    <link rel="stylesheet" href="/assets/css/style/forms.css">
-    <link rel="stylesheet" href="/assets/css/style/footer.css">
-    <link rel="stylesheet" href="/assets/css/style/media-queries.css">
-    <link rel="stylesheet" href="/assets/css/style/media-widget.css">
-
-    <link rel="stylesheet" href="/assets/css/custom-styles.css">
-    <link rel="stylesheet" href="/assets/css/responsive-iframe.css">
+    <!-- custom styles -->
+    @Styles.Render("~/bundles/css")
 
     <script src="/assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
+    @*
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
+    *@
     <link rel="shortcut icon" href="/favicon.png">
 </head>
 <body>
@@ -91,5 +63,10 @@
             })
         })(window.jQuery);
     </script>
+
+    @if (!HttpContext.Current.IsDebuggingEnabled)
+    {
+        @Html.Partial("AnalyticsPartial")
+    }
 </body>
 </html>
