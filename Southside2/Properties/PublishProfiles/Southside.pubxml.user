@@ -10,7 +10,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Code/HTML.cshtml">
-      <publishTime>03/28/2014 18:24:21</publishTime>
+      <publishTime>04/01/2014 23:10:13</publishTime>
     </File>
     <File Include="assets/css/animate.css">
       <publishTime>01/07/2014 11:38:44</publishTime>
@@ -55,7 +55,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/19/2014 00:49:22</publishTime>
     </File>
     <File Include="assets/css/style/media-widget.css">
-      <publishTime>03/28/2014 18:54:17</publishTime>
+      <publishTime>04/01/2014 23:03:03</publishTime>
     </File>
     <File Include="assets/css/style/navigation.css">
       <publishTime>03/28/2014 17:58:28</publishTime>
@@ -340,7 +340,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/07/2014 11:38:44</publishTime>
     </File>
     <File Include="Views/Home/HeroPartial.cshtml">
-      <publishTime>04/01/2014 21:43:54</publishTime>
+      <publishTime>04/01/2014 22:22:00</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>04/01/2014 21:27:55</publishTime>
@@ -355,7 +355,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/04/2014 22:39:39</publishTime>
     </File>
     <File Include="Views/Home/SermonsPartial.cshtml">
-      <publishTime>03/28/2014 18:10:31</publishTime>
+      <publishTime>04/01/2014 23:14:26</publishTime>
     </File>
     <File Include="Views/Home/TestimonyPartial.cshtml">
       <publishTime>01/07/2014 11:38:44</publishTime>
@@ -412,7 +412,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/30/2014 23:46:17</publishTime>
     </File>
     <File Include="Views/Shared/AnalyticsPartial.cshtml">
-      <publishTime>04/01/2014 21:38:00</publishTime>
+      <publishTime>04/01/2014 22:17:45</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>01/07/2014 11:38:44</publishTime>
