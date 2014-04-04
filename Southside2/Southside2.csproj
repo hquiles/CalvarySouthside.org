@@ -163,6 +163,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Media\Controllers\BrandController.cs" />
+    <Compile Include="Areas\Media\MediaAreaRegistration.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\CalendarController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -192,13 +194,13 @@
     <Content Include="assets\css\style\media-queries.css" />
     <Content Include="assets\css\style\media-widget.css" />
     <Content Include="assets\css\style\navigation.css" />
-    <Content Include="assets\css\style\page-home.css" />
-    <Content Include="assets\css\style\page-news.css" />
-    <Content Include="assets\css\style\page-testimonials.css" />
-    <Content Include="assets\css\style\page-work.css" />
-    <Content Include="assets\css\style\page-about.css" />
-    <Content Include="assets\css\style\page-contact.css" />
-    <Content Include="assets\css\style\page-team.css" />
+    <Content Include="assets\css\page\home.css" />
+    <Content Include="assets\css\page\news.css" />
+    <Content Include="assets\css\page\testimonials.css" />
+    <Content Include="assets\css\page\work.css" />
+    <Content Include="assets\css\page\about.css" />
+    <Content Include="assets\css\page\contact.css" />
+    <Content Include="assets\css\page\team.css" />
     <Content Include="assets\css\typography.css" />
     <Content Include="assets\fonts\ProximaNova\proximanova-black-webfont.svg" />
     <Content Include="assets\fonts\ProximaNova\proximanova-bold-webfont.svg" />
@@ -255,6 +257,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\HTML.cshtml" />
+    <Content Include="Areas\Media\Views\Web.config" />
+    <Content Include="Areas\Media\Views\Brand\Index.cshtml" />
     <None Include="assets\fonts\fontawesome-webfont.eot" />
     <None Include="assets\fonts\fontawesome-webfont.svg" />
     <None Include="assets\fonts\fontawesome-webfont.ttf" />
@@ -313,7 +317,10 @@
       <Name>CalvarySouthside</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Areas\Media\Models\" />
+    <Folder Include="Areas\Media\Views\Shared\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

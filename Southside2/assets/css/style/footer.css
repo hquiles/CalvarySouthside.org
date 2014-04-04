@@ -101,6 +101,12 @@ ul.social-icons {
 
         #footer p a {
             color: #626C72;
-            font-weight: bold;
+            border-bottom: 1px dotted #4a5156;
+            font-weight: normal;
             text-decoration: none;
+        }
+
+        #footer p a:hover {
+            color: #b1b6b9;
+            border-bottom: 1px solid #626C72;
         }
