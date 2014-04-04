@@ -355,7 +355,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/04/2014 22:39:39</publishTime>
     </File>
     <File Include="Views/Home/SermonsPartial.cshtml">
-      <publishTime>04/01/2014 23:14:26</publishTime>
+      <publishTime>04/03/2014 21:09:26</publishTime>
     </File>
     <File Include="Views/Home/TestimonyPartial.cshtml">
       <publishTime>01/07/2014 11:38:44</publishTime>
