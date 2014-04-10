@@ -84,49 +84,6 @@
     padding:2em;
 }
 
-#map_thumbnail {
-    background-image:url("/assets/img/ui/map.png");
-    background-position:center center;
-    min-height:136px;
-    position:relative;
-}
-
-    #map_thumbnail a {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-
-        border:4px solid #fff;
-    }
-
-        #map_thumbnail a:hover {
-            border-color:#f49f67;
-            border-color:rgba(244, 159, 103, 0.5);
-            transition:none;
-        }
-
-        #map_thumbnail a:hover span {
-            background-color:#f49f67;
-            color:#fff;
-        }
-
-        #map_thumbnail a span {
-            position: absolute;
-            top: 0;
-            right: 0;
-            background-color:rgba(255,255,255,0.9);
-            padding:0 6px;
-            font-size:0.6em;
-            text-transform:uppercase;
-            color:#bbb;
-
-            -webkit-border-bottom-left-radius: 10px;
-            -moz-border-radius-bottomleft: 10px;
-            border-bottom-left-radius: 10px;
-        }
-
 
 /*-------------------------------------------------*/
 

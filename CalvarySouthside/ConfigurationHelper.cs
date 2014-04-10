@@ -29,5 +29,10 @@ namespace CalvarySouthside
             get { return ConfigurationManager.AppSettings["GoogleMapsUrl"]; }
         }
 
+        public static string SermonPodcastUrl
+        {
+            get { return ConfigurationManager.AppSettings["SermonPodcastUrl"]; }
+        }
+
     }
 }

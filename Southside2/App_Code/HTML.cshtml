@@ -43,3 +43,19 @@
         </div>
     </div>
 }
+
+@helper MediaWidget(string title, string url, DateTime publishedDate)
+{
+    <div class="well media-widget">
+
+        <h4 class="black">@title</h4>
+
+        <div class="group">
+            <time>@string.Format("{0:dddd MMM d, yyyy}", publishedDate)</time>
+            <div class="btn-group">
+                @*<a href="@url" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-download"></span> Download</a>*@
+                <a href="@url" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-play"></span> Listen</a>
+            </div>
+        </div>
+    </div>
+}

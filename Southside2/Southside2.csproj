@@ -164,6 +164,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Media\Controllers\BrandController.cs" />
+    <Compile Include="Areas\Media\Controllers\SermonsController.cs" />
     <Compile Include="Areas\Media\MediaAreaRegistration.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\CalendarController.cs" />
@@ -191,6 +192,7 @@
     <Content Include="assets\css\style\carousel.css" />
     <Content Include="assets\css\style\forms.css" />
     <Content Include="assets\css\style\global.css" />
+    <Content Include="assets\css\style\google-map.css" />
     <Content Include="assets\css\style\media-queries.css" />
     <Content Include="assets\css\style\media-widget.css" />
     <Content Include="assets\css\style\navigation.css" />
@@ -259,6 +261,7 @@
     <Content Include="App_Code\HTML.cshtml" />
     <Content Include="Areas\Media\Views\Web.config" />
     <Content Include="Areas\Media\Views\Brand\Index.cshtml" />
+    <Content Include="Areas\Media\Views\Sermons\Index.cshtml" />
     <None Include="assets\fonts\fontawesome-webfont.eot" />
     <None Include="assets\fonts\fontawesome-webfont.svg" />
     <None Include="assets\fonts\fontawesome-webfont.ttf" />

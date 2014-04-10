@@ -1,0 +1,17 @@
+﻿@model List<CalvarySouthside.Podcast.PodcastItem>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="content1" class="section">
+    <div class="container">
+        <h3>Sermons</h3>
+
+        @foreach (var item in Model)
+        {
+            @HTML.MediaWidget(item.Title, item.Url, item.PublishedDate)
+        }
+    </div>
+</section>

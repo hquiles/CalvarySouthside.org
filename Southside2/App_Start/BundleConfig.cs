@@ -25,17 +25,17 @@ namespace Southside2
 
             // TODO: remove page-*.css
             bundles.Add(new StyleBundle("~/bundles/css").Include(
-                 "~/assets/css/typography.css"
-                ,"~/assets/css/style/global.css"
-                ,"~/assets/css/style/navigation.css"
-                ,"~/assets/css/style/page-home.css"
-                ,"~/assets/css/style/content.css"
-                ,"~/assets/css/style/blog.css"
-                ,"~/assets/css/style/forms.css"
-                ,"~/assets/css/style/footer.css"
-                ,"~/assets/css/style/media-queries.css"
-                ,"~/assets/css/style/media-widget.css"
-                ,"~/assets/css/responsive-iframe.css"
+                  "~/assets/css/typography.css"
+                , "~/assets/css/style/global.css"
+                , "~/assets/css/style/navigation.css"
+                , "~/assets/css/style/page-home.css"
+                , "~/assets/css/style/content.css"
+                , "~/assets/css/style/forms.css"
+                , "~/assets/css/style/footer.css"
+                , "~/assets/css/style/google-map.css"
+                , "~/assets/css/style/media-queries.css"
+                , "~/assets/css/style/media-widget.css"
+                , "~/assets/css/responsive-iframe.css"
                 ));
 
         }

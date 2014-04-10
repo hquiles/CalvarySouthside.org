@@ -58,6 +58,8 @@
     <Compile Include="Infrastructure\Database.cs" />
     <Compile Include="Forms\Message.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="Podcast\Podcast.cs" />
+    <Compile Include="Podcast\XmlParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
