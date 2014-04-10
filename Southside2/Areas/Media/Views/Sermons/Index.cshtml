@@ -9,9 +9,9 @@
     <div class="container">
         <h3>Sermons</h3>
 
-        @foreach (var item in Model)
+        @foreach (var podcast in Model)
         {
-            @HTML.MediaWidget(item.Title, item.Url, item.PublishedDate)
+            @HTML.MediaWidget(podcast)
         }
     </div>
 </section>

@@ -27,34 +27,17 @@
     </div>
 }
 
-@helper MediaWidget(int year, int month, int day, string title, string url)
-{
-    DateTime dt = new DateTime(year, month, day);
-    <div class="well media-widget">
-
-        <h4 class="black">@title</h4>
-        
-        <div class="group">
-            <time>@string.Format("{0:dddd MMM d, yyyy}", dt)</time>
-            <div class="btn-group">
-                @*<a href="@url" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-download"></span> Download</a>*@
-                <a href="@url" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-play"></span> Listen</a>
-            </div>
-        </div>
-    </div>
-}
-
-@helper MediaWidget(string title, string url, DateTime publishedDate)
+@helper MediaWidget(CalvarySouthside.Podcast.PodcastItem podcast)
 {
     <div class="well media-widget">
 
-        <h4 class="black">@title</h4>
+        <h4 class="black">@podcast.Title</h4>
 
         <div class="group">
-            <time>@string.Format("{0:dddd MMM d, yyyy}", publishedDate)</time>
+            <time>@string.Format("{0:dddd MMM d, yyyy}", podcast.PublishedDate)</time>
             <div class="btn-group">
-                @*<a href="@url" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-download"></span> Download</a>*@
-                <a href="@url" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-play"></span> Listen</a>
+                @*<a href="@podcast.Url" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-download"></span> Download</a>*@
+                <a href="@podcast.Url" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-play"></span> Listen</a>
             </div>
         </div>
     </div>

@@ -1,18 +1,16 @@
-﻿    <div class="container">
+﻿@model List<CalvarySouthside.Podcast.PodcastItem>
+    <div class="container">
         <div class="row">
-            <div class="col-sm-4 service margin-30">
-                @HTML.MediaWidget(2014, 4, 2, "Acts 9", "https://dl.dropboxusercontent.com/u/128970065/Podcast/CalvarySouthside.org-2014-04-06-Acts9.mp3")
+            @for (int i = 0; i < 3; i++)
+            {
+                <div class="col-sm-4 service">
+                    @HTML.MediaWidget(Model[i])
+                </div>
+            }
+        </div>
+        <div class="row margin-30">
+            <div class="col-sm-12">
+                <a href="/media/sermons">View All Sermons</a>
             </div>
-            <div class="col-sm-4 service margin-30">
-                @HTML.MediaWidget(2014, 4, 2, "Genesis 43", "https://dl.dropboxusercontent.com/u/128970065/Podcast/CalvarySouthside.org-2014-04-02-Genesis43-JimMcFall.mp3")
-            </div>
-            <div class="col-sm-4 service margin-30">
-                @HTML.MediaWidget(2014, 3, 30, "Acts 8", "https://dl.dropboxusercontent.com/u/128970065/Podcast/CalvarySouthside.org-2014-03-30-Acts8.mp3")
-            </div>
-@*
-            <div class="col-sm-4 service margin-30">
-                @HTML.MediaWidget(2014, 3, 26, "Genesis 42", "https://dl.dropboxusercontent.com/u/128970065/Podcast/CalvarySouthside.org-2014-03-26-Genesis42.mp3")
-            </div>
-*@
         </div>
     </div>

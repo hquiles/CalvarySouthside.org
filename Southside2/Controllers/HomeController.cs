@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using CalvarySouthside;
+using CalvarySouthside.Podcast;
 using System.Web.Mvc;
 
 namespace Southside2.Controllers
@@ -12,21 +10,11 @@ namespace Southside2.Controllers
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
-            return View();
+            var parser = new XmlParser();
+            var items = parser.Parse(ConfigurationHelper.SermonPodcastUrl);
+
+            return View(items);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your app description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
