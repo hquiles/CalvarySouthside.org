@@ -1,0 +1,33 @@
+﻿/* possible general purpose reporting styles */
+
+.reports-subitem {
+    font-size:0.85em;
+}
+
+.reports-subitem .fa {
+    opacity:0.5;
+    opacity: 0.5;
+    font-size: 0.5em;
+    vertical-align: middle;
+    margin-right:0.5em;
+}
+
+a.reports-toggle:hover span {
+    opacity:1.0;
+}
+
+/* budget specific */
+
+.reports-subitem {
+    background-color:#eee;
+}
+
+.reports-subitem-indent {
+    width: 21px;
+    display: inline-block;
+}
+
+.reports-budget-financialcolumn {
+    text-align:right;
+    width:180px;    
+}

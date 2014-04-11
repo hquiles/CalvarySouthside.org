@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Podcast\XmlParserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\Budget\BudgetGeneratorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CalvarySouthside\CalvarySouthside.csproj">
@@ -59,6 +60,7 @@
       <Name>CalvarySouthside</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

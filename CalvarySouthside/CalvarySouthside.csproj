@@ -61,6 +61,10 @@
     <Compile Include="Podcast\Podcast.cs" />
     <Compile Include="Podcast\XmlParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\Budget\AnnualReport.cs" />
+    <Compile Include="Reporting\Budget\BudgetGenerator.cs" />
+    <Compile Include="Reporting\Budget\LineItem.cs" />
+    <Compile Include="Reporting\Budget\MonthlyLineItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

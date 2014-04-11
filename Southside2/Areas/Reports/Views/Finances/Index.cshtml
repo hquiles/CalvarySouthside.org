@@ -1,0 +1,105 @@
+﻿@using CalvarySouthside.Reporting.Budget
+@model AnnualReport
+
+@{
+    ViewBag.Title = "Financial Budget";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section PageCss
+{
+    <link href="/assets/css/page/reports-finances.css" rel="stylesheet" />
+}
+
+<section id="content1" class="section">
+    <div class="container">
+
+        <h3>Financial Report @Model.Year</h3>
+
+        <p class="margin-30">
+            In an effort to be transparent and above reproach regarding church financials the following report details how the money you are donating is being stewarded.
+        </p>
+
+        <div class="well">
+            <div><strong>Year-to-Date Totals</strong></div>
+            Income: <strong>@Model.TotalAnnualIncome.ToString("C")</strong>
+            Expenses: <strong>@Model.TotalAnnualExpenses.ToString("C")</strong>
+        </div>
+
+        <div id="chart_div" style="height: 250px;"></div>
+
+        <table class="table table-bordered">
+            <tr>
+                <th>Month</th>
+                <th>Tithes / Offerings</th>
+                <th>Expenses</th>
+                <th>Credit Card</th>
+                <th>Checking</th>
+                <th>Savings</th>
+            </tr>
+            @foreach (var monthlyItem in Model.MonthlyLineItems)
+            {
+                if (monthlyItem.Items.Count > 0)
+                {
+                    <tr>
+                        <td>
+                            @monthlyItem.MonthName
+                        </td>
+                        <td class="reports-budget-financialcolumn">@monthlyItem.TotalMonthIncome.ToString("C")</td>
+                        <td class="reports-budget-financialcolumn">@monthlyItem.TotalMonthExpenses.ToString("C")</td>
+                        <td class="reports-budget-financialcolumn">@monthlyItem.LatestCreditCardBalance.ToString("C")</td>
+                        <td class="reports-budget-financialcolumn">@monthlyItem.LatestCheckingAccountBalance.ToString("C")</td>
+                        <td class="reports-budget-financialcolumn">@monthlyItem.LatestSavingsAccountBalance.ToString("C")</td>
+                    </tr>
+                    if (monthlyItem.Items.Count > 1)
+                    {
+                        foreach (var item in monthlyItem.Items)
+                        {
+                            <tr class="reports-subitem">
+                                <td>
+                                    <span class="fa fa-chevron-right"></span>
+                                    @item.Date.ToString("MMMM d")
+                                </td>
+                                <td class="reports-budget-financialcolumn">@item.sIncome</td>
+                                <td class="reports-budget-financialcolumn">@item.sExpenses</td>
+                                <td class="reports-budget-financialcolumn">--</td>
+                                <td class="reports-budget-financialcolumn">--</td>
+                                <td class="reports-budget-financialcolumn">--</td>
+                            </tr>
+                        }
+                    }
+                }
+            }
+        </table>
+
+    </div>
+</section>
+
+
+@section Javascript 
+{
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+    google.load("visualization", "1", { packages: ["corechart"] });
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+
+            ['Month', 'Giving', { role: 'style' }],
+            @foreach (var item in Model.MonthlyLineItems.OrderBy(x => x.Month))
+            {
+                @MvcHtmlString.Create(string.Format("['{0}', {1}, '#f49f67'],", item.MonthName.Substring(0,3), item.TotalMonthIncome))
+            }
+        ]);
+
+        var options = {
+            legend: { position: "none" }
+            //title: 'Company Performance',
+            //vAxis: { title: 'Year', titleTextStyle: { color: 'red' } }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+    }
+</script>
+}

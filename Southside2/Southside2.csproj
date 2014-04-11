@@ -166,6 +166,8 @@
     <Compile Include="Areas\Media\Controllers\BrandController.cs" />
     <Compile Include="Areas\Media\Controllers\SermonsController.cs" />
     <Compile Include="Areas\Media\MediaAreaRegistration.cs" />
+    <Compile Include="Areas\Reports\Controllers\FinancesController.cs" />
+    <Compile Include="Areas\Reports\ReportsAreaRegistration.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\CalendarController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -185,6 +187,7 @@
     <Content Include="assets\css\bootstrap\buttons.css" />
     <Content Include="assets\css\flexslider.css" />
     <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\page\reports-finances.css" />
     <Content Include="assets\css\responsive-iframe.css" />
     <Content Include="assets\css\style\blog.css" />
     <Content Include="assets\css\style\content.css" />
@@ -262,6 +265,8 @@
     <Content Include="Areas\Media\Views\Web.config" />
     <Content Include="Areas\Media\Views\Brand\Index.cshtml" />
     <Content Include="Areas\Media\Views\Sermons\Index.cshtml" />
+    <Content Include="Areas\Reports\Views\Web.config" />
+    <Content Include="Areas\Reports\Views\Finances\Index.cshtml" />
     <None Include="assets\fonts\fontawesome-webfont.eot" />
     <None Include="assets\fonts\fontawesome-webfont.svg" />
     <None Include="assets\fonts\fontawesome-webfont.ttf" />

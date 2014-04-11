@@ -29,6 +29,16 @@ h1, h2, h3, h4, h5, h6, strong {
     margin:0;
 }
 
+th {
+    background-color: #26292B;
+    color: #eee;
+    font-size: 0.7em;
+    text-align:center;
+    border: 1px solid #000 !important;
+}
+
+/**/
+
 hr.orange
 {
     height:4px;
