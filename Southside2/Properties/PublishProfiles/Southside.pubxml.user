@@ -21,6 +21,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Areas/Media/Views/Web.config">
       <publishTime>04/03/2014 21:37:30</publishTime>
     </File>
+    <File Include="Areas/Reports/Views/Finances/Index.cshtml">
+      <publishTime>04/10/2014 23:40:03</publishTime>
+    </File>
+    <File Include="Areas/Reports/Views/Web.config">
+      <publishTime>04/10/2014 15:53:10</publishTime>
+    </File>
     <File Include="assets/css/animate.css">
       <publishTime>01/07/2014 11:38:44</publishTime>
     </File>
@@ -51,6 +57,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="assets/css/page/news.css">
       <publishTime>01/18/2014 23:32:36</publishTime>
     </File>
+    <File Include="assets/css/page/reports-finances.css">
+      <publishTime>04/10/2014 23:31:22</publishTime>
+    </File>
     <File Include="assets/css/page/team.css">
       <publishTime>01/18/2014 23:33:00</publishTime>
     </File>
@@ -79,7 +88,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/22/2014 17:06:37</publishTime>
     </File>
     <File Include="assets/css/style/global.css">
-      <publishTime>03/28/2014 18:27:12</publishTime>
+      <publishTime>04/10/2014 16:56:42</publishTime>
     </File>
     <File Include="assets/css/style/google-map.css">
       <publishTime>04/08/2014 21:03:01</publishTime>
@@ -259,7 +268,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/07/2014 12:20:06</publishTime>
     </File>
     <File Include="bin/CalvarySouthside.dll">
-      <publishTime>04/09/2014 23:54:10</publishTime>
+      <publishTime>04/10/2014 23:44:38</publishTime>
     </File>
     <File Include="bin/DotNetOpenAuth.AspNet.dll">
       <publishTime>01/07/2014 12:20:32</publishTime>
@@ -298,7 +307,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/07/2014 12:22:32</publishTime>
     </File>
     <File Include="bin/Southside2.dll">
-      <publishTime>04/09/2014 23:54:11</publishTime>
+      <publishTime>04/10/2014 23:44:40</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Extensions.dll">
       <publishTime>03/04/2014 19:21:17</publishTime>
@@ -451,13 +460,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/07/2014 11:38:44</publishTime>
     </File>
     <File Include="Views/Shared/FooterPartial.cshtml">
-      <publishTime>04/08/2014 21:00:42</publishTime>
+      <publishTime>04/10/2014 23:41:18</publishTime>
     </File>
     <File Include="Views/Shared/NavigationPartial.cshtml">
       <publishTime>04/03/2014 21:18:53</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>04/03/2014 22:14:57</publishTime>
+      <publishTime>04/10/2014 17:16:51</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>01/07/2014 11:38:44</publishTime>
@@ -466,7 +475,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/07/2014 11:38:44</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/09/2014 23:54:12</publishTime>
+      <publishTime>04/10/2014 23:44:41</publishTime>
     </File>
   </ItemGroup>
 </Project>

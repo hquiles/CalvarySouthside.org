@@ -308,6 +308,7 @@
     <None Include="Properties\PublishProfiles\Southside.pubxml" />
     <Content Include="Views\Contact\ThankYou.cshtml" />
     <Content Include="Views\Shared\AnalyticsPartial.cshtml" />
+    <Content Include="Views\Shared\MetaTags.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
