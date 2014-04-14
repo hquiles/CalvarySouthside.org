@@ -169,6 +169,7 @@
     <Compile Include="Areas\Reports\Controllers\FinancesController.cs" />
     <Compile Include="Areas\Reports\ReportsAreaRegistration.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\CacheController.cs" />
     <Compile Include="Controllers\CalendarController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -239,7 +240,6 @@
     <Content Include="assets\js\bootstrap.min.js" />
     <Content Include="assets\js\jquery-1.10.1.min.js" />
     <Content Include="assets\js\jquery.flexslider-min.js" />
-    <Content Include="assets\js\main.js" />
     <Content Include="assets\js\modernizr-2.6.2-respond-1.1.0.min.js" />
     <Content Include="favicon.png" />
     <Content Include="Global.asax" />
@@ -251,6 +251,7 @@
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

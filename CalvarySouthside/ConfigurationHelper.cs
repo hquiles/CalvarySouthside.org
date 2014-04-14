@@ -44,5 +44,10 @@ namespace CalvarySouthside
             get { return ConfigurationManager.AppSettings["FinancialBudgetUrl"]; }
         }
 
+        public static string FacebookUrl
+        {
+            get { return ConfigurationManager.AppSettings["FacebookUrl"]; }
+        }
+
     }
 }

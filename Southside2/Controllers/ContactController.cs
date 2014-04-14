@@ -1,22 +1,18 @@
-﻿using CalvarySouthside.Forms;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using CalvarySouthside.Enums;
+using CalvarySouthside.Forms;
 using System.Web.Mvc;
 
 namespace Southside2.Controllers
 {
     public class ContactController : Controller
     {
-        //
-        // GET: /Contact/
-
+        [OutputCache(Location = System.Web.UI.OutputCacheLocation.Server, Duration = (int)Seconds.OneMonth, VaryByParam = "none")]
         public ActionResult Index()
         {
             return View();
         }
 
+        [OutputCache(Location = System.Web.UI.OutputCacheLocation.Server, Duration = (int)Seconds.OneMonth, VaryByParam = "none")]
         public ActionResult ThankYou()
         {
             return View();
